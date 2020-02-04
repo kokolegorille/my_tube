@@ -1,3 +1,19 @@
 /* This file is for your main application css. */
 
-@import "./phoenix.css";
+/* Bootstrap 4 style */
+
+/* Use the scss version to enable media breakpoint */
+
+/* @import "~bootstrap/dist/css/bootstrap.min.css"; */
+@import "~bootstrap/scss/bootstrap.scss";
+
+/* @import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/mixins/_breakpoints.scss"; */
+
+/* Font awesome 4.7 style */
+@import "~font-awesome/css/font-awesome.min.css"; 
+
+@import "./fonts";
+
+@import "./styles";

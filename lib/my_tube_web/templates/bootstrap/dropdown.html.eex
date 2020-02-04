@@ -1,0 +1,26 @@
+<div class="<%= @wrapper_class %>">
+  <a class="dropdown-toggle <%= assigns[:class] %>" 
+    id="dropdownMenuButton" 
+    data-toggle="dropdown" 
+    aria-haspopup="true" 
+    aria-expanded="false"
+  >
+    <%= if assigns[:icon] do %>
+      <i class="fa fa-<%= assigns[:icon] %>"></i>
+    <% end %>
+    <%= assigns[:title] %>
+  </a>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <%= for link <- @links do %>
+      <%= if link == :divider do %>
+        <div class="dropdown-divider"></div>
+      <% else %>
+        <%= 
+          {caption, options} = link
+          options = Keyword.merge(options, class: "dropdown-item")
+          link(caption, options)
+        %>
+      <% end %>
+    <% end %>
+  </div>
+</div>

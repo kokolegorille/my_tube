@@ -15,3 +15,13 @@ import "phoenix_html"
 //
 // Local files can be imported directly using relative paths, for example:
 // import socket from "./socket"
+
+import "babel-polyfill";
+
+// Bootstrap dynamic file input
+
+import bsCustomFileInput from 'bs-custom-file-input'
+
+$(document).ready(function () {
+  bsCustomFileInput.init()
+})

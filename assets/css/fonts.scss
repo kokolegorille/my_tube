@@ -1,0 +1,55 @@
+/* FONTS */
+@font-face {
+  font-family: openSans;
+  src: url("../fonts/open_sans.ttf") format("truetype"); /* For IE */
+  src: local("open_sans"), url("../fonts/open_sans.ttf") format("truetype"); /* For non-IE */
+}
+
+@font-face {
+  font-family: droidSans;
+  src: url("../fonts/droid_sans.ttf") format("truetype"); /* For IE */
+  src: local("droid_sans"), url("../fonts/droid_sans.ttf") format("truetype"); /* For non-IE */
+}
+
+@font-face {
+  font-family: droidSerif;
+  src: url("../fonts/droid_serif.ttf") format("truetype"); /* For IE */
+  src: local("droid_serif"), url("../fonts/droid_serif.ttf") format("truetype"); /* For non-IE */
+}
+
+@font-face {
+  font-family: cherrySwash;
+  src: url("../fonts/cherry_swash.ttf") format("truetype"); /* For IE */
+  src: local("cherry_swash"), url("../fonts/cherry_swash.ttf") format("truetype"); /* For non-IE */
+}
+
+@font-face {
+  font-family: flamenco;
+  src: url("../fonts/flamenco.ttf") format("truetype"); /* For IE */
+  src: local("flamenco"), url("../fonts/flamenco.ttf") format("truetype"); /* For non-IE */
+}
+
+@font-face {
+  font-family: inconsolata;
+  src: url("../fonts/flamenco.ttf") format("truetype"); /* For IE */
+  src: local("flamenco"), url("../fonts/inconsolata.ttf") format("truetype"); /* For non-IE */
+}
+
+@font-face {
+  font-family: orbitron;
+  src: url("../fonts/orbitron.ttf") format("truetype"); /* For IE */
+  src: local("orbitron"), url("../fonts/orbitron.ttf") format("truetype"); /* For non-IE */
+}
+
+$font_family_sans_serif: "droidSans", "openSans", "flamenco", Verdana, Arial, sans-serif;
+$font_family_serif: "droidSerif", "cherrySwash", Georgia, "Times New Roman", Times, serif;
+$font_family_monospace: "inconsolata", "Courier New", Courier, monospace;
+
+body {
+  font-family: $font_family_sans_serif;
+  h1, h2, h3, h4, h5, h6 { font-family: $font_family_serif; }
+}
+
+.monospace {
+  font-family: $font_family_monospace;
+}

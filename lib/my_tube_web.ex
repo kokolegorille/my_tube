@@ -39,6 +39,15 @@ defmodule MyTubeWeb do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
+      # Bootstrap helper
+      import MyTubeWeb.Helpers.BootstrapHelper
+
+      # Waffle helper
+      import MyTubeWeb.Helpers.WaffleHelper
+
+      # Checkbox helper
+      import MyTubeWeb.Helpers.CheckboxHelper
+
       import MyTubeWeb.ErrorHelpers
       import MyTubeWeb.Gettext
       alias MyTubeWeb.Router.Helpers, as: Routes
