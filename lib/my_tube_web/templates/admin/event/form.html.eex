@@ -1,0 +1,12 @@
+<%= form_for @changeset, @action, [multipart: true], fn f -> %>
+  <%= input(f, :title, html_opts: [required: true]) %>
+  <%= input(f, :medium, using: :file_input, html_opts: [accept: ".mp4"]) %>
+  <%= 
+  # UNCOMMENT TO BE ABLE TO DELETE PREVIOUS ATTACHMENTS
+  #clear_attachment(@changeset.data, :medium) 
+  %>
+  <%= submit "Submit", class: "btn btn-primary" %>&nbsp;
+  <%= if assigns[:cancel] do %>
+    <%= link gettext("Cancel"), to: @cancel %>
+  <% end %>
+<% end %>

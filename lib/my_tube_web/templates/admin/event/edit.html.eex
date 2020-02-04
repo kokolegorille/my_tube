@@ -1,0 +1,8 @@
+<h1><%= gettext "Edit Event" %></h1>
+
+<%= 
+  render "form.html", 
+    action: Routes.admin_event_path(@conn, :update, @event), 
+    changeset: @changeset,
+    cancel: Routes.admin_event_path(@conn, :show, @event)
+%>

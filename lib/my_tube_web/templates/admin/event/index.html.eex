@@ -1,0 +1,26 @@
+<h1><%= gettext("Events") %></h1>
+
+<%= 
+  link gettext("New"), 
+  to: Routes.admin_event_path(@conn, :new),
+  class: "btn btn-primary"
+%>
+
+<%= if length(@events) > 0 do %>
+  <div class="card-columns">
+    <%= for event <- @events do %>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><%= event.title %></h5>
+          <%= 
+            link gettext("Show"), 
+            to: Routes.admin_event_path(@conn, :show, event),
+            class: "card-link"
+          %>
+        </div>
+      </div>
+    <% end %> 
+  </div>
+<% else %>
+  <p><%= gettext("The list is empty") %></p>
+<% end %>

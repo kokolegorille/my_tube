@@ -13,7 +13,7 @@ defmodule MyTubeWeb.Endpoint do
     at: "/",
     from: :my_tube,
     gzip: false,
-    only: ~w(css fonts images js favicon.ico robots.txt)
+    only: ~w(css fonts images js favicon.ico robots.txt uploads)
 
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.
@@ -27,7 +27,11 @@ defmodule MyTubeWeb.Endpoint do
   plug Plug.Telemetry, event_prefix: [:phoenix, :endpoint]
 
   plug Plug.Parsers,
-    parsers: [:urlencoded, :multipart, :json],
+    parsers: [
+      :urlencoded,
+      {:multipart, length: 1_000_000_000},
+      :json
+    ],
     pass: ["*/*"],
     json_decoder: Phoenix.json_library()
 

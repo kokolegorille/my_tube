@@ -1,0 +1,118 @@
+## "msgid"s in this file come from POT (.pot) files.
+##
+## Do not add, change, or remove "msgid"s manually here as
+## they're tied to the ones in the corresponding POT file
+## (with the same domain).
+##
+## Use "mix gettext.extract --merge" or "mix gettext.merge"
+## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: fr\n"
+"Plural-Forms: nplurals=2\n"
+
+#, elixir-format
+#: lib/my_tube_web/templates/admin/event/show.html.eex:29
+msgid "Animated"
+msgstr ""
+
+#, elixir-format
+#: lib/my_tube_web/templates/admin/event/show.html.eex:13
+msgid "Are you sure?"
+msgstr ""
+
+#, elixir-format
+#: lib/my_tube_web/templates/admin/event/form.html.eex:10
+msgid "Cancel"
+msgstr ""
+
+#, elixir-format
+#: lib/my_tube_web/controllers/admin/event_controller.ex:37
+msgid "Could not create event."
+msgstr ""
+
+#, elixir-format
+#: lib/my_tube_web/controllers/admin/event_controller.ex:59
+msgid "Could not update event."
+msgstr ""
+
+#, elixir-format
+#: lib/my_tube_web/templates/admin/event/show.html.eex:10
+msgid "Delete"
+msgstr ""
+
+#, elixir-format
+#: lib/my_tube_web/templates/admin/event/show.html.eex:5
+msgid "Edit"
+msgstr ""
+
+#, elixir-format
+#: lib/my_tube_web/templates/admin/event/edit.html.eex:1
+msgid "Edit Event"
+msgstr ""
+
+#, elixir-format
+#: lib/my_tube_web/controllers/admin/event_controller.ex:32
+msgid "Event created successfully."
+msgstr ""
+
+#, elixir-format
+#: lib/my_tube_web/controllers/admin/event_controller.ex:69
+msgid "Event deleted successfully."
+msgstr ""
+
+#, elixir-format
+#: lib/my_tube_web/controllers/admin/event_controller.ex:16
+msgid "Event not found."
+msgstr ""
+
+#, elixir-format
+#: lib/my_tube_web/controllers/admin/event_controller.ex:54
+msgid "Event updated successfully."
+msgstr ""
+
+#, elixir-format
+#: lib/my_tube_web/templates/admin/event/index.html.eex:1
+#: lib/my_tube_web/views/layout_view.ex:17
+msgid "Events"
+msgstr ""
+
+#, elixir-format
+#: lib/my_tube_web/views/layout_view.ex:12
+msgid "Home"
+msgstr ""
+
+#, elixir-format
+#: lib/my_tube_web/templates/admin/event/index.html.eex:4
+msgid "New"
+msgstr ""
+
+#, elixir-format
+#: lib/my_tube_web/templates/admin/event/new.html.eex:1
+msgid "New Event"
+msgstr ""
+
+#, elixir-format
+#: lib/my_tube_web/templates/admin/event/show.html.eex:19
+msgid "Original"
+msgstr ""
+
+#, elixir-format
+#: lib/my_tube_web/templates/admin/event/index.html.eex:16
+msgid "Show"
+msgstr ""
+
+#, elixir-format
+#: lib/my_tube_web/templates/admin/event/index.html.eex:25
+msgid "The list is empty"
+msgstr ""
+
+#, elixir-format
+#: lib/my_tube_web/templates/admin/event/show.html.eex:24
+msgid "Thumb"
+msgstr ""
+
+#, elixir-format
+#: lib/my_tube_web/templates/page/index.html.eex:1
+msgid "Video Uploading"
+msgstr ""

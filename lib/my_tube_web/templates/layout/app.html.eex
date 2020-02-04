@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <%= navbar(@conn, links(@conn)) %>
+      <%= navbar(@conn, links(@conn), right_links(@conn)) %>
     </header>
     <main role="main" class="container-fluid">
       <div class="<%= flash_class(@conn) %>">

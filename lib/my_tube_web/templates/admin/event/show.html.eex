@@ -1,0 +1,31 @@
+<h1><%= @event.title %></h1>
+
+<div class="btn-group" role="group" aria-label="quick_links">
+  <%= 
+    link gettext("Edit"), 
+    to: Routes.admin_event_path(@conn, :edit, @event),
+    class: "btn btn-warning"
+  %>
+  <%= 
+    link gettext("Delete"), 
+    to: Routes.admin_event_path(@conn, :delete, @event),
+    method: :delete,
+    data: [confirm: gettext("Are you sure?")],
+    class: "btn btn-danger"
+  %>
+</div>
+
+<div>
+  <h2><%= gettext("Original") %></h2>
+  <%= display_medium(@event, :original) %>
+</div>
+
+<div>
+  <h2><%= gettext("Thumb") %></h2>
+  <%= display_medium(@event, :thumb) %>
+</div>
+
+<div>
+  <h2><%= gettext("Animated") %></h2>
+  <%= display_medium(@event, :animated) %>
+</div>

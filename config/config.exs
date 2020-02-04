@@ -25,6 +25,17 @@ config :logger, :console,
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 
+# Gettext
+config :my_tube, MyTubeWeb.Gettext, default_locale: "fr", locales: ~w(en fr)
+
+# Waffle
+config :waffle,
+  storage: Waffle.Storage.Local
+  # default timeout is 15_000
+  # There is a timeout for large files
+  # But increasin does not solve it...
+  # version_timeout: 150_000
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env()}.exs"

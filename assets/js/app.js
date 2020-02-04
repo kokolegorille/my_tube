@@ -18,10 +18,27 @@ import "phoenix_html"
 
 import "babel-polyfill";
 
+// ====================================
 // Bootstrap dynamic file input
+// ====================================
 
 import bsCustomFileInput from 'bs-custom-file-input'
 
-$(document).ready(function () {
-  bsCustomFileInput.init()
-})
+$(document).ready(() => bsCustomFileInput.init());
+
+// ====================================
+// Limit the size of files, client side
+// ====================================
+
+const maxFileSize = 50;
+
+$(document).ready(() => $(".custom-file-input").on("change", e => {
+  e.stopPropagation();
+  e.stopImmediatePropagation();
+  
+  const sizeInMB = ((e.currentTarget.files[0].size/1024)/1024).toFixed(4);
+  if (sizeInMB > maxFileSize) {
+    console.log(`File is too big ${sizeInMB} MB`)
+    e.target.value = "";
+  }
+}));
