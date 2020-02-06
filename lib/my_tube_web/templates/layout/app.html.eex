@@ -8,21 +8,61 @@
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
   </head>
   <body>
-    <header>
-      <%= navbar(@conn, [], right_links(@conn, @current_user)) %>
-      <%= if @current_user, do: render "userbar.html", conn: @conn, links: links(@conn, @current_user) %>
-    </header>
-    <main role="main" class="container-fluid">
-      <div class="<%= flash_class(@conn) %>">
-        <%= flash(get_flash(@conn, :info), :success) %>
-        <%= flash(get_flash(@conn, :error), :danger) %>
-      </div>
-      <%= render @view_module, @view_template, assigns %>
+    <div class="wrapper">
+      <nav id="sidebar">
+        <div class="sidebar-header d-flex align-items-end">
+          <button type="button" id="dismiss" class="btn btn-light">
+            <%= fa("arrow-left") %>
+          </button>
+          <h3 class="flamenco">MyTube</h3>
+        </div>
 
-      <footer class="footer container">
-        <p class="text-muted">&copy; klg - 2020</p>
-      </footer>
-    </main>
+        <div class="sidebar-body">
+          <ul class="list-unstyled components">
+            <p>Dummy Heading</p>
+
+            <li>
+              <a href="#firstSubmenu" data-toggle="collapse" aria-expanded="false">First</a>
+              <ul id="firstSubmenu" class="collapse list-unstyled">
+                <li><a href="">one</a></li>
+                <li><a href="">two</a></li>
+                <li><a href="">three</a></li>
+              </ul>
+            </li>
+            <hr/>
+            <li>
+              <a href="#secondSubmenu" data-toggle="collapse" aria-expanded="false">Second</a>
+              <ul id="secondSubmenu" class="collapse list-unstyled">
+                <li><a href="">one</a></li>
+                <li><a href="">two</a></li>
+                <li><a href="">three</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+
+      <div id="content">
+        <header>
+          <%= navbar(@conn, [], right_links(@conn, @current_user)) %>
+          <%= if @current_user, do: render "userbar.html", conn: @conn, links: links(@conn, @current_user) %>
+        </header>
+        <main role="main" class="container-fluid">
+          <div class="<%= flash_class(@conn) %>">
+            <%= flash(get_flash(@conn, :info), :success) %>
+            <%= flash(get_flash(@conn, :error), :danger) %>
+          </div>
+          <%= render @view_module, @view_template, assigns %>
+
+          <footer class="footer container">
+            <p class="text-muted">&copy; klg - 2020</p>
+          </footer>
+        </main>
+      </div>  
+    </div>
+    <div class="overlay"></div>
+
     <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/vendor.js") %>"></script>
     <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
   </body>

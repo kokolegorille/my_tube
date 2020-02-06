@@ -12,14 +12,23 @@ defmodule MyTubeWeb.Admin.UserController do
   end
 
   def show(conn, %{"id" => id}) do
-    with %User{} = user <- Accounts.get_user(id) do
-      render(conn, "show.html", user: user)
-    else
+    case Accounts.get_user(id) do
       nil ->
         conn
         |> put_flash(:error, gettext("User not found."))
         |> redirect(to: Routes.admin_user_path(conn, :index))
+      user ->
+        render(conn, "show.html", user: user)
     end
+
+    # with %User{} = user <- Accounts.get_user(id) do
+    #   render(conn, "show.html", user: user)
+    # else
+    #   nil ->
+    #     conn
+    #     |> put_flash(:error, gettext("User not found."))
+    #     |> redirect(to: Routes.admin_user_path(conn, :index))
+    # end
   end
 
   def new(conn, _params) do

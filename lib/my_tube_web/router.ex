@@ -21,6 +21,11 @@ defmodule MyTubeWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    resources("/events", PageController, only: [:show]) do
+      get "/get_medium", PageController, :get_medium
+      get "/get_thumb", PageController, :get_thumb
+    end
+
     resources("/sessions", SessionController, only: [:new, :create, :delete])
 
     scope "/admin", Admin, as: :admin do

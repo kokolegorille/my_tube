@@ -3,6 +3,7 @@
 alias MyTube.{
   Accounts, 
   Core,
+  Uploaders,
   Repo
 }
 

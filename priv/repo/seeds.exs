@@ -13,7 +13,7 @@
 alias MyTube.Accounts
 
 # Create admin
-{:ok, admin} = Accounts.create_user(%{
+{:ok, _admin} = Accounts.create_user(%{
   name: "admin",
   email: "admin@example.local",
   password: "secret",

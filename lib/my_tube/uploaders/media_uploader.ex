@@ -11,7 +11,8 @@ defmodule MyTube.Uploaders.MediaUploader do
   @acl :public_read
 
   # versions
-  @versions [:original, :thumb, :animated]
+  # @versions [:original, :thumb, :animated]
+  @versions [:original, :thumb]
 
   @video_extension ~w(.mp4 .mov)
 
@@ -29,20 +30,20 @@ defmodule MyTube.Uploaders.MediaUploader do
   # ARGS AS STRING
   #
   # def transform(:thumb, _) do
-  #   {:ffmpeg, fn(input, output) -> "-i #{input} -f image2 -vframes 1 #{output}" end, :png}
+  #   {:ffmpeg, fn(input, output) -> "-i #{input} -f image2 -vframes 1 -y #{output}" end, :png}
   # end
 
   # ARGS AS LIST
   #
   def transform(:thumb, _) do
-    # {:ffmpeg, fn(input, output) -> ["-i", input, "-f", "image2", "-vframes", "1", output] end, :png}
+    # {:ffmpeg, fn(input, output) -> ["-i", input, "-f", "image2", "-vframes", "1", "-y", output] end, :png}
     :skip
   end
 
-  def transform(:animated, _) do
-    # {:ffmpeg, fn(input, output) -> "-i #{input} -f gif #{output}" end, :gif}
-    :skip
-  end
+  # def transform(:animated, _) do
+  #   # {:ffmpeg, fn(input, output) -> "-i #{input} -f gif -y #{output}" end, :gif}
+  #   :skip
+  # end
 
   # Override the storage directory:
   def storage_dir(version, {_file, scope}) do
@@ -52,7 +53,8 @@ defmodule MyTube.Uploaders.MediaUploader do
   # Override the storage directory prefix:
   # IMPORTANT!
   def storage_dir_prefix() do
-    Path.join to_string(:code.priv_dir(:my_tube)), ["static/", "uploads"]
+    # Path.join to_string(:code.priv_dir(:my_tube)), ["static/", "uploads"]
+    "/Users/sqrt/DATA_2020/uploads"
   end
 
   # Provide a default URL if there hasn't been a file uploaded
@@ -80,4 +82,66 @@ defmodule MyTube.Uploaders.MediaUploader do
   end
 
   def version_dir(version), do: "event/media/#{version}/"
+
+  # def local_path(event, version \\ :original) do
+  #   path = {event.medium, event}
+  #   |> url(version)
+  #   |> sanitize_path()
+
+  #   case path do
+  #     nil -> nil
+  #     path -> Path.join(storage_dir_prefix(), path)
+  #   end
+  # end
+
+  # # Waffle returns nil path for outside version transformation
+  # # => Forge one
+  # def local_auto_path(event, version \\ :original) do
+  #   Path.join(
+  #     local_dir(event, version),
+  #     version_file_name(event, version)
+  #   )
+  # end
+
+  def local_path(event, version \\ :original)
+  def local_path(event, :original) do
+    path = {event.medium, event}
+    |> url(:original)
+    |> sanitize_path()
+
+    case path do
+      nil -> nil
+      path -> Path.join(storage_dir_prefix(), path)
+    end
+  end
+  # Waffle returns nil path for outside version transformation
+  # => Forge one
+  def local_path(event, version) do
+    Path.join(
+      local_dir(event, version),
+      version_file_name(event, version)
+    )
+  end
+
+  def version_file_name(event, :thumb) do
+    Path.rootname(event.medium.file_name) <> ".png"
+  end
+
+  def version_file_name(event, _) do
+    event.medium.file_name
+  end
+
+  def local_dir(event, version \\ :original) do
+    Path.join(
+      storage_dir_prefix(),
+      storage_dir(version, {nil, event})
+    )
+  end
+
+  defp sanitize_path(nil), do: nil
+  defp sanitize_path(path) do
+    path
+    |> String.split("?")
+    |> List.first
+  end
 end

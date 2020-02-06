@@ -50,7 +50,6 @@ defmodule MyTube.MixProject do
       {:waffle_ecto, "~> 0.0.7"},
       {:uuid, "~> 1.1"},
       {:argon2_elixir, "~> 2.1"},
-      {:ecto_enum, "~> 1.4"},
       #
       {:dialyxir, "~> 1.0.0-rc.7", only: [:dev], runtime: false},
       {:credo, "~> 1.1", only: [:dev], runtime: false},
