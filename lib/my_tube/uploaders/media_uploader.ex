@@ -35,16 +35,18 @@ defmodule MyTube.Uploaders.MediaUploader do
   # ARGS AS LIST
   #
   def transform(:thumb, _) do
-    {:ffmpeg, fn(input, output) -> ["-i", input, "-f", "image2", "-vframes", "1", output] end, :png}
+    # {:ffmpeg, fn(input, output) -> ["-i", input, "-f", "image2", "-vframes", "1", output] end, :png}
+    :skip
   end
 
   def transform(:animated, _) do
-    {:ffmpeg, fn(input, output) -> "-i #{input} -f gif #{output}" end, :gif}
+    # {:ffmpeg, fn(input, output) -> "-i #{input} -f gif #{output}" end, :gif}
+    :skip
   end
 
   # Override the storage directory:
   def storage_dir(version, {_file, scope}) do
-    "event/media/#{version}/#{scope.medium_uuid}"
+    "#{version_dir(version)}#{scope.medium_uuid}"
   end
 
   # Override the storage directory prefix:
@@ -65,7 +67,7 @@ defmodule MyTube.Uploaders.MediaUploader do
   def all_storage_dirs(%{medium_uuid: medium_uuid} = _event) when not is_nil(medium_uuid) do
     @versions
     |> Enum.map(fn version ->
-      Path.join(storage_dir_prefix(), ["event/media/#{version}/", medium_uuid])
+      Path.join(storage_dir_prefix(), [version_dir(version), medium_uuid])
     end)
   end
   def all_storage_dirs(_event), do: []
@@ -76,4 +78,6 @@ defmodule MyTube.Uploaders.MediaUploader do
       File.rm_rf(dir)
     end)
   end
+
+  def version_dir(version), do: "event/media/#{version}/"
 end

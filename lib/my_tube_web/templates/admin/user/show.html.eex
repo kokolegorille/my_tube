@@ -1,0 +1,21 @@
+<%= 
+  #breadcrumb(
+  #  [@user], 
+  #  &link(&1.name, to: Routes.admin_user_path(@conn, :show, &1)),
+  #  first: link(gettext("Users"), to: Routes.admin_user_path(@conn, :index)),
+  #  right: dropleft(
+  #    title: gettext("Settings"), 
+  #    links: user_links(@conn, @user), 
+  #    class: "text-danger", 
+  #    icon: "cog"
+  #  ),
+  #  field: :name
+  #)
+%>
+
+<h1><%= @user.name %></h1>
+
+<dl class="dl-horizontal">
+  <%= definition gettext("Email"), @user.email %>
+  <%= definition gettext("Roles"), Enum.join(roles_from_mask(@user.roles_mask), ", ") %>
+</dl>

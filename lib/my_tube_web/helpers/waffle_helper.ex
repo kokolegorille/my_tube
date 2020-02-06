@@ -6,6 +6,9 @@ defmodule MyTubeWeb.Helpers.WaffleHelper do
   use Phoenix.HTML
   alias MyTube.Uploaders
 
+  @video_extensions ~w(.mp4)
+  @image_extensions ~w(.png .jpg .jpeg .gif)
+
   # HELPERS
 
   # Add a delete checkbox if attachment is present
@@ -39,20 +42,22 @@ defmodule MyTubeWeb.Helpers.WaffleHelper do
     def display_medium(%{medium: medium} = _event, _version, _opts) when is_nil(medium) do
       # noop
     end
-    def display_medium(event, version, opts) do
-      path = event
-      |> medium_path(version)
 
-      case Path.extname(path) do
-        ".mp4" ->
-          opts = Keyword.merge([autoplay: true, loop: true,  muted: true], opts)
-          content_tag(:video, opts) do
-            content_tag(:source, nil, type: "video/mp4", src: path)
+    def display_medium(event, version, opts) do
+      case medium_path(event, version) do
+        nil -> nil
+        path ->
+          case Path.extname(path) do
+            format when format in @video_extensions ->
+              opts = Keyword.merge([autoplay: true, loop: true,  muted: true], opts)
+              content_tag(:video, opts) do
+                content_tag(:source, nil, type: "video/mp4", src: path)
+              end
+            format when format in @image_extensions ->
+              img_tag(path, opts)
+            other ->
+              content_tag(:p, "Unrecognized format #{other}")
           end
-        format when format in [".png", "jpg", "jpeg", ".gif"] ->
-          img_tag(path, opts)
-        other ->
-          content_tag(:p, "Unrecognized format #{other}")
       end
     end
 

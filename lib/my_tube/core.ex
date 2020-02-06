@@ -102,9 +102,16 @@ defmodule MyTube.Core do
       {:error, %Ecto.Changeset{}}
 
   """
-  def create_event(attrs \\ %{}) do
-    %Event{}
+  # def create_event(attrs \\ %{}) do
+  #   %Event{}
+  #   |> Event.changeset(attrs)
+  #   |> Repo.insert()
+  # end
+
+  def create_event(creator, attrs \\ %{}) do
+    Ecto.build_assoc(creator, :events)
     |> Event.changeset(attrs)
+    |> IO.inspect(label: "CHANGESET")
     |> Repo.insert()
   end
 

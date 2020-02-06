@@ -30,7 +30,7 @@ $(document).ready(() => bsCustomFileInput.init());
 // Limit the size of files, client side
 // ====================================
 
-const maxFileSize = 50;
+const maxFileSize = 200;
 
 $(document).ready(() => $(".custom-file-input").on("change", e => {
   e.stopPropagation();

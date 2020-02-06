@@ -24,6 +24,9 @@ defmodule MyTubeWeb do
       import Plug.Conn
       import MyTubeWeb.Gettext
       alias MyTubeWeb.Router.Helpers, as: Routes
+
+      # Auth
+      import MyTubeWeb.Plugs.Auth, only: [authenticate: 2]
     end
   end
 
@@ -38,6 +41,9 @@ defmodule MyTubeWeb do
 
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
+
+      # Base helper
+      import MyTubeWeb.Helpers.BaseHelper
 
       # Bootstrap helper
       import MyTubeWeb.Helpers.BootstrapHelper

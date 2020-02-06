@@ -1,0 +1,44 @@
+<h1><%= gettext("Users") %></h1>
+
+<%= 
+  # This breadcrumb has no links, just Index at starts and a dropdown at right
+  # There is no need for a real renderer!
+  #breadcrumb(
+  #  [%{title: gettext("Users")}], 
+  #  fn _ -> nil end,
+  #  right: dropleft(
+  #    title: gettext("Settings"), 
+  #    links: [{gettext("New User"), to: Routes.admin_user_path(@conn, :new)}], 
+  #    class: "text-danger", 
+  #    icon: "cog")
+  #)
+%>
+
+<%= if length(@users) > 0 do %>
+  <table class="table table-hover">
+    <thead>
+      <th scope="col"><%= gettext "Name" %></th>
+      <th scope="col"><%= gettext "Email" %></th>
+      <th scope="col"><%= gettext "Roles" %></th>
+      <th scope="col"><%= gettext "Actions" %></th>
+    </thead>
+    <tbody>
+      <%= for user <- @users do %>
+        <tr>
+          <td><%= user.name %></td>
+          <td><%= user.email %></td>
+          <td><%= Enum.join(roles_from_mask(user.roles_mask), ", ") %></td>
+          <td>
+            <%= 
+              link gettext("Show"), 
+                to: Routes.admin_user_path(@conn, :show, user.id),
+                class: "btn btn-sm btn-outline-primary"
+            %>
+          </td>
+        </tr>
+      <% end %> 
+    </tbody>
+  </table>
+<% else %>
+  <p><%= gettext("The list is empty") %></p>
+<% end %>

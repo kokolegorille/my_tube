@@ -18,8 +18,8 @@
         </li>
       <% end %>
     </ul>
-    <form class="form-inline mr-auto">
-      <input class="form-control mr-sm-2 text-light bg-dark" type="search" placeholder="Search" aria-label="Search">
+    <form id="search-form" class="form-inline mr-auto">
+      <input class="form-control mr-sm-2 text-light" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-secondary" type="submit">
         <%= fa("search") %>
       </button>

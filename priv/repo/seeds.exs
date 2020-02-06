@@ -9,3 +9,13 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+
+alias MyTube.Accounts
+
+# Create admin
+{:ok, admin} = Accounts.create_user(%{
+  name: "admin",
+  email: "admin@example.local",
+  password: "secret",
+  roles: ["Admin"]
+  })

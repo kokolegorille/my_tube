@@ -4,6 +4,8 @@ defmodule MyTubeWeb.Admin.EventController do
   alias MyTube.Core
   alias Core.Event
 
+  plug :authenticate
+
   def index(conn, _params) do
     events = Core.list_events(order: :asc)
     render(conn, "index.html", events: events)
@@ -26,7 +28,7 @@ defmodule MyTubeWeb.Admin.EventController do
   end
 
   def create(conn, %{"event" => event_params} = _params) do
-    case Core.create_event(event_params) do
+    case Core.create_event(conn.assigns.current_user, event_params) do
       {:ok, event} ->
         conn
         |> put_flash(:info, gettext("Event created successfully."))

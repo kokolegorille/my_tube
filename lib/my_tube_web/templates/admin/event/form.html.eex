@@ -1,5 +1,6 @@
 <%= form_for @changeset, @action, [multipart: true], fn f -> %>
   <%= input(f, :title, html_opts: [required: true]) %>
+  <%= input(f, :description, using: :textarea, html_opts: [rows: 5, required: true]) %>
   <%= input(f, :medium, using: :file_input, html_opts: [accept: ".mp4"]) %>
   <%= 
   # UNCOMMENT TO BE ABLE TO DELETE PREVIOUS ATTACHMENTS

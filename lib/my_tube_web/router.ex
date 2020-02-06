@@ -1,6 +1,6 @@
 defmodule MyTubeWeb.Router do
   use MyTubeWeb, :router
-  alias MyTubeWeb.Plugs.Locale
+  alias MyTubeWeb.Plugs.{Auth, Locale}
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -9,6 +9,7 @@ defmodule MyTubeWeb.Router do
     plug :protect_from_forgery
     plug :put_secure_browser_headers
     #
+    plug(Auth)
     plug(Locale)
   end
 
@@ -20,8 +21,10 @@ defmodule MyTubeWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    resources("/sessions", SessionController, only: [:new, :create, :delete])
 
     scope "/admin", Admin, as: :admin do
+      resources("/users", UserController)
       resources("/events", EventController)
     end
 

@@ -1,0 +1,28 @@
+<%= form_for @changeset, @action, fn f -> %>
+  <%= input(f, :name) %>
+  <%= input(f, :email) %>
+  
+  <%= if String.ends_with?(@action, "/users") do %>
+    <%= input(f, :password) %>
+  <% end %>
+
+  <label for="roles"><%= gettext("Roles") %></label>
+  <div class="form-group">
+    <%= 
+      multiselect_checkboxes(
+        f,
+        :roles,
+        select_roles(),
+        selected: user_selected_roles(@changeset.data),
+        disabled: is_self_and_last_admin?(
+          @current_user, @changeset.data
+        )
+      )
+    %>
+  </div>
+
+  <%= submit "Submit", class: "btn btn-primary" %>&nbsp;
+  <%= if assigns[:cancel] do %>
+    <%= link gettext("Cancel"), to: @cancel %>
+  <% end %>
+<% end %>

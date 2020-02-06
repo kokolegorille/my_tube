@@ -9,7 +9,8 @@
   </head>
   <body>
     <header>
-      <%= navbar(@conn, links(@conn), right_links(@conn)) %>
+      <%= navbar(@conn, [], right_links(@conn, @current_user)) %>
+      <%= if @current_user, do: render "userbar.html", conn: @conn, links: links(@conn, @current_user) %>
     </header>
     <main role="main" class="container-fluid">
       <div class="<%= flash_class(@conn) %>">
@@ -17,6 +18,10 @@
         <%= flash(get_flash(@conn, :error), :danger) %>
       </div>
       <%= render @view_module, @view_template, assigns %>
+
+      <footer class="footer container">
+        <p class="text-muted">&copy; klg - 2020</p>
+      </footer>
     </main>
     <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/vendor.js") %>"></script>
     <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>

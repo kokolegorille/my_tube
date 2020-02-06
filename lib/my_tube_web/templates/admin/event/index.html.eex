@@ -1,9 +1,17 @@
 <h1><%= gettext("Events") %></h1>
 
 <%= 
-  link gettext("New"), 
-  to: Routes.admin_event_path(@conn, :new),
-  class: "btn btn-primary"
+  # This breadcrumb has no links, just Index at starts and a dropdown at right
+  # There is no need for a real renderer!
+  #breadcrumb(
+  #  [%{title: gettext("Events")}], 
+  #  fn _ -> nil end,
+  #  right: dropleft(
+  #    title: gettext("Settings"), 
+  #    links: [{gettext("New Event"), to: Routes.admin_event_path(@conn, :new)}], 
+  #    class: "text-danger", 
+  #    icon: "cog")
+  #)
 %>
 
 <%= if length(@events) > 0 do %>

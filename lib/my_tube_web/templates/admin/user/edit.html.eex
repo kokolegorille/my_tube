@@ -1,0 +1,10 @@
+<h1><%= gettext "Edit User" %></h1>
+
+<%= 
+  render "form.html", 
+    action: Routes.admin_user_path(@conn, :update, @user), 
+    changeset: @changeset,
+    cancel: Routes.admin_user_path(@conn, :show, @user),
+    # Pass the current user to the form, to check for last admin
+    current_user: @current_user
+%>

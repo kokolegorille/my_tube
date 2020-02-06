@@ -1,0 +1,25 @@
+<nav role="navigation" class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+  <button 
+    class="navbar-toggler" 
+    type="button" 
+    data-toggle="collapse" 
+    data-target="#userNavbar" 
+    aria-controls="userNavbar" 
+    aria-expanded="false" 
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="userNavbar">
+    <div class="navbar-nav navbar-left">
+      <%= render_existing view_module(@conn), "object_menu.html", assigns %>
+    </div>
+    <ul class="navbar-nav ml-auto">
+      <%= for link <- @links do %>
+        <li class="nav-item <%= active_class(@conn, link) %>">
+          <%= link %>
+        </li>
+      <% end %>
+    </ul>
+
+  </div>
+</nav>
