@@ -24,12 +24,22 @@
         </li>
       <% end %>
     </ul>
-    <form id="search-form" class="form-inline mr-auto">
-      <input class="form-control mr-sm-2 text-light" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-secondary" type="submit">
+    <%= 
+      form_for @conn, 
+      Routes.page_path(@conn, :index), 
+      [method: :get, id: "search-form", class: "form-inline mr-auto"], 
+      fn f -> %>
+      <%= 
+        search_input f, 
+        :query, 
+        class: "form-control mr-sm-2 text-light", 
+        type: "search", 
+        placeholder: gettext("Search"), 
+        "aria-label": "Search" %>
+      <%= submit class: "btn btn-outline-secondary" do %>
         <%= fa("search") %>
-      </button>
-    </form>
+      <% end %>
+    <% end %>
     <%= if assigns[:right_links] do %>
       <ul class="navbar-nav navbar-right">
         <%= for link <- @right_links do %>

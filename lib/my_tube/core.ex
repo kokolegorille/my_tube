@@ -109,9 +109,19 @@ defmodule MyTube.Core do
   # end
 
   def create_event(creator, attrs \\ %{}) do
-    Ecto.build_assoc(creator, :events)
+    result = Ecto.build_assoc(creator, :events)
     |> Event.changeset(attrs)
     |> Repo.insert()
+
+    case result do
+      {:ok, event} ->
+        # Build the thumb when event is created
+        spawn(fn -> Uploaders.MediaTransformer.create_thumb(event) end)
+
+        result
+      {:error, _} ->
+        result
+    end
   end
 
   @doc """

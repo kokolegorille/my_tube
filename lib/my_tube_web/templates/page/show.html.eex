@@ -1,16 +1,21 @@
-<h1><%= @event.title %></h1>
+<script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/jwplayer-8.4.1/jwplayer.js") %>"></script>
 
-<dl class="dl-horizontal">
-  <%= definition gettext("Title"), @event.title %>
-  <%= definition gettext("Description"), format_linebreaks(@event.description) %>
-</dl>
+<script type="text/javascript">
+  jwplayer();
+</script>
 
-<div>
-  <h2><%= gettext("Original") %></h2>
-  <%= display_medium(@conn, @event, :original) %>
-</div>
+<div class="row">
+  <div class="col-sm-7">
+    <%= display_medium(@conn, @event, :original) %>
+  </div>
+  <div class="col-sm-5">
+    <h1><%= @event.title %></h1>
 
-<div>
-  <h2><%= gettext("Thumb") %></h2>
-  <%= display_medium(@conn, @event, :thumb) %>
+    <dl class="dl-horizontal">
+      <%= definition gettext("Title"), @event.title %>
+      <%= definition gettext("Description"), format_linebreaks(@event.description) %>
+      <%= definition gettext("Likes"), @event.likes_count %>
+      <%= definition gettext("Views"), @event.views_count %>
+    </dl>
+  </div>
 </div>

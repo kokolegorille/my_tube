@@ -10,6 +10,10 @@ defmodule MyTube.Accounts.User do
   schema "users" do
     has_many(:events, Event)
 
+    # Likes and views
+    many_to_many :liked_events, Event, join_through: "likes", on_replace: :delete
+    many_to_many :viewed_events, Event, join_through: "views", on_replace: :delete
+
     field :email, :string
     field :name, :string
     field :password, :string, virtual: true

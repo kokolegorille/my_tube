@@ -15,8 +15,17 @@ defmodule MyTube.Core.Event do
     # Belongs_to
     belongs_to(:creator, User, foreign_key: :user_id, on_replace: :delete)
 
+    many_to_many :liked_users, User, join_through: "likes", on_replace: :delete
+    many_to_many :viewed_users, User, join_through: "views", on_replace: :delete
+
+    # Counter cache
+    field :likes_count, :integer
+    field :views_count, :integer
+
     field :title, :string
     field :description, :binary
+
+    # Waffle
     field :medium, MediaUploader.Type
     field :medium_uuid, :string
 

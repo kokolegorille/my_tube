@@ -27,6 +27,9 @@ defmodule MyTubeWeb do
 
       # Auth
       import MyTubeWeb.Plugs.Auth, only: [authenticate: 2]
+
+      # Live view
+      import Phoenix.LiveView.Controller
     end
   end
 
@@ -54,6 +57,9 @@ defmodule MyTubeWeb do
       # Checkbox helper
       import MyTubeWeb.Helpers.CheckboxHelper
 
+      # Live view
+      import Phoenix.LiveView.Helpers
+
       import MyTubeWeb.ErrorHelpers
       import MyTubeWeb.Gettext
       alias MyTubeWeb.Router.Helpers, as: Routes
@@ -65,6 +71,9 @@ defmodule MyTubeWeb do
       use Phoenix.Router
       import Plug.Conn
       import Phoenix.Controller
+
+      # Live view
+      import Phoenix.LiveView.Router
     end
   end
 

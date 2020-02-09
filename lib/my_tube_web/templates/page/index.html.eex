@@ -4,13 +4,18 @@
   <div class="card-columns">
     <%= for event <- @events do %>
       <div class="card">
+        <%= display_medium(@conn, event, :thumb, class: "card-img-top") %>
         <div class="card-body">
           <h5 class="card-title"><%= event.title %></h5>
+
           <%= 
-            link gettext("Show"), 
-            to: Routes.page_path(@conn, :show, event),
-            class: "card-link"
+            #link gettext("Show"), 
+            #to: Routes.page_path(@conn, :show, event),
+            #class: "card-link"
           %>
+
+          <%= link("Live Show", to: Routes.live_path(@conn, MyTubeWeb.Live.Event.Show, event), class: "card-link") %>
+
         </div>
       </div>
     <% end %> 

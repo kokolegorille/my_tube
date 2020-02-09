@@ -1,6 +1,13 @@
 defmodule MyTubeWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :my_tube
 
+  @session_options [
+    store: :cookie,
+    key: "_demo_key",
+    signing_salt: "3YGvy8FF"
+  ]
+
+  socket "/live", Phoenix.LiveView.Socket, websocket: [connect_info: [session: @session_options]]
   socket "/socket", MyTubeWeb.UserSocket,
     websocket: true,
     longpoll: false
@@ -41,10 +48,11 @@ defmodule MyTubeWeb.Endpoint do
   # The session will be stored in the cookie and signed,
   # this means its contents can be read but not tampered with.
   # Set :encryption_salt if you would also like to encrypt it.
-  plug Plug.Session,
-    store: :cookie,
-    key: "_my_tube_key",
-    signing_salt: "S4TzZUoI"
+  # plug Plug.Session,
+  #   store: :cookie,
+  #   key: "_my_tube_key",
+  #   signing_salt: "S4TzZUoI"
+  plug Plug.Session, @session_options
 
   plug MyTubeWeb.Router
 end

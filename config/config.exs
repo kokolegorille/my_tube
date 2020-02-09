@@ -15,7 +15,10 @@ config :my_tube, MyTubeWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "ZKLoZ8S/IDDHBicCUpIW7opVlJmKGKc3/CBF1L+XJ9zrqrg2JSHrxTohZSr6IMPJ",
   render_errors: [view: MyTubeWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: MyTube.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: MyTube.PubSub, adapter: Phoenix.PubSub.PG2],
+  live_view: [
+    signing_salt: "L+TUlmWe+oP81lUh/VGCP+daxzD/cCZ1"
+  ]
 
 # Configures Elixir's Logger
 config :logger, :console,

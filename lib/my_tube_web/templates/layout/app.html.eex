@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>MyTube · Phoenix Framework</title>
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
+    <%= csrf_meta_tag() %>
   </head>
   <body>
     <div class="wrapper">
@@ -45,7 +46,15 @@
 
       <div id="content">
         <header>
-          <%= navbar(@conn, [], right_links(@conn, @current_user)) %>
+          <%= 
+            navbar(
+              @conn, 
+              [
+                # link("Live", to: Routes.live_path(@conn, MyTubeWeb.DemoLive), class: "nav-link"),
+              ], 
+              right_links(@conn, @current_user)
+            ) 
+          %>
           <%= if @current_user, do: render "userbar.html", conn: @conn, links: links(@conn, @current_user) %>
         </header>
         <main role="main" class="container-fluid">

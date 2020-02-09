@@ -61,7 +61,8 @@ config :my_tube, MyTubeWeb.Endpoint,
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
       ~r"lib/my_tube_web/{live,views}/.*(ex)$",
-      ~r"lib/my_tube_web/templates/.*(eex)$"
+      ~r"lib/my_tube_web/templates/.*(eex)$",
+      ~r{lib/my_tube_web/live/.*(ex)$},
     ]
   ]
 

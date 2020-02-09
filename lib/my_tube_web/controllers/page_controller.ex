@@ -1,7 +1,7 @@
 defmodule MyTubeWeb.PageController do
   use MyTubeWeb, :controller
 
-  alias MyTube.{Core, Uploaders}
+  alias MyTube.{Core, Viewing, Uploaders}
   alias Core.Event
   alias Uploaders.MediaUploader
 
@@ -17,6 +17,19 @@ defmodule MyTubeWeb.PageController do
         |> put_flash(:error, gettext("Event not found."))
         |> redirect(to: Routes.page_path(conn, :index))
       %Event{} = event ->
+
+        # Increment views count & notify pubsub
+        user = conn.assigns.current_user
+        event = if user do
+          case Viewing.view(user, event) do
+            :error -> event
+            {:ok, _user} ->
+              Core.get_event(id)
+          end
+        else
+          event
+        end
+
         render(conn, "show.html", event: event)
     end
   end

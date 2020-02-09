@@ -10,10 +10,10 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="userNavbar">
-    <div class="navbar-nav navbar-left">
+    <div class="navbar-nav ml-auto">
       <%= render_existing view_module(@conn), "object_menu.html", assigns %>
     </div>
-    <ul class="navbar-nav ml-auto">
+    <ul class="navbar-nav">
       <%= for link <- @links do %>
         <li class="nav-item <%= active_class(@conn, link) %>">
           <%= link %>

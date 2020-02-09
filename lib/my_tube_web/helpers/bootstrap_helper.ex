@@ -142,6 +142,7 @@ defmodule MyTubeWeb.Helpers.BootstrapHelper do
       _ -> nil
     end
   end
+  def active_class(_conn, _link), do: nil
 
   @doc """
   Form Input helper

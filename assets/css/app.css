@@ -14,6 +14,8 @@
 /* Font awesome 4.7 style */
 @import "~font-awesome/css/font-awesome.min.css"; 
 
+@import "../../deps/phoenix_live_view/assets/css/live_view.css";
+
 @import "./fonts";
 
 @import "./styles";

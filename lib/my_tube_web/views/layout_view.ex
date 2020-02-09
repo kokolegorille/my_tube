@@ -35,6 +35,7 @@ defmodule MyTubeWeb.LayoutView do
 
   def right_links(conn, current_user_or_nil, opts \\ []) do
     [
+      welcome_message(current_user_or_nil),
       sign_helper(conn, current_user_or_nil, opts),
       langswitch(lang_params())
     ]
@@ -60,6 +61,15 @@ defmodule MyTubeWeb.LayoutView do
     ) do
       fa("sign-out")
     end
+  end
+
+  def welcome_message(nil), do: nil
+  def welcome_message(current_user) do
+    content_tag(
+      :span,
+      gettext("Welcome") <> " #{current_user.name}",
+      class: "navbar-text"
+    )
   end
 
   # Langswitch
