@@ -1,0 +1,15 @@
+08:56:58.202 [error] #PID<0.764.0> running MyTubeWeb.Endpoint (connection #PID<0.763.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: POST /sessions
+** (exit) an exception was raised:
+    ** (RuntimeError) expected action/2 to return a Plug.Conn, all plugs must receive a connection (conn) and return a connection, got: :ok
+        (my_tube 0.1.0) lib/my_tube_web/controllers/session_controller.ex:1: MyTubeWeb.SessionController.phoenix_controller_pipeline/2
+        (phoenix 1.4.12) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:122: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.12) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3

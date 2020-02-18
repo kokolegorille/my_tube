@@ -9,7 +9,10 @@ defmodule MyTubeWeb.Helpers.BootstrapHelper do
   @doc """
   Font Awesome helper
   """
-  def fa(icon), do: content_tag(:i, nil, class: "fa fa-#{icon}")
+  def fa(icon, opts \\ []) do
+    class = "fa fa-#{icon} #{opts[:class]}"
+    content_tag(:i, nil, class: class)
+  end
 
   @doc """
   Definition helper

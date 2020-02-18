@@ -1,0 +1,280 @@
+08:55:30.284 [info] Running MyTubeWeb.Endpoint with cowboy 2.7.0 at 0.0.0.0:4000 (http)
+08:55:30.286 [info] Access MyTubeWeb.Endpoint at http://localhost:4000
+08:55:30.841 [info] CONNECTED TO Phoenix.LiveView.Socket in 238µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: %{"_csrf_token" => "INQZkJXaV0d_nglphg1_0-Mo", "locale" => "en", "redirect_url" => "/admin/events/new"}}
+  Parameters: %{"_csrf_token" => "GnwSMCd9NidmeyUzAz8gKRstXDZGYgM2S2CjL7nF0KAlmXLYsJmivONY", "vsn" => "2.0.0"}
+08:55:31.410 [info] CONNECTED TO Phoenix.LiveView.Socket in 173µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: %{"_csrf_token" => "8G9yF-AdkZJe6RlLWRfhISy0", "locale" => "en", "redirect_url" => nil, "user_id" => 1}}
+  Parameters: %{"_csrf_token" => "cHdqLGsfMAMvHQ5TQGBfdCM8F1lxFU1IH0SU-2qgDGD6v238tnq18F4x", "vsn" => "2.0.0"}
+08:55:36.786 request_id=FfOER4FIjMChQM8AAAql [info] GET /
+08:55:36.823 request_id=FfOER4FIjMChQM8AAAql [info] Sent 200 in 37ms
+08:55:36.900 request_id=FfOER4g9mfi_GvMAAAsF [info] GET /events/2/get_thumb
+08:55:36.906 request_id=FfOER4g9mfi_GvMAAAsF [info] Sent 200 in 5ms
+08:55:37.162 [info] CONNECTED TO Phoenix.LiveView.Socket in 264µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: %{"_csrf_token" => "8G9yF-AdkZJe6RlLWRfhISy0", "locale" => "en", "redirect_url" => nil, "user_id" => 1}}
+  Parameters: %{"_csrf_token" => "fChMDD4UdikTBXksTws/fh8KPlsPZ09iDouux97Mx_3IyYS2HXX3F46R", "vsn" => "2.0.0"}
+08:55:44.951 request_id=FfOESWgV7vjGT0IAAAnh [info] POST /sessions
+08:55:45.405 request_id=FfOESWgV7vjGT0IAAAnh [info] Sent 200 in 454ms
+08:55:45.616 [info] CONNECTED TO Phoenix.LiveView.Socket in 167µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: %{"_csrf_token" => "INQZkJXaV0d_nglphg1_0-Mo", "locale" => "en", "redirect_url" => "/admin/events/new"}}
+  Parameters: %{"_csrf_token" => "MxQVaTMODic9dSAGNxA7Py4UVBpcfxs2zZD3XDVFkEDYYwWOFseElRVY", "vsn" => "2.0.0"}
+08:55:49.820 request_id=FfOESopZ9nA53v4AAAiE [info] POST /sessions
+08:55:49.851 [info] CONNECTED TO Phoenix.LiveView.Socket in 249µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: %{"_csrf_token" => "INQZkJXaV0d_nglphg1_0-Mo", "locale" => "en", "redirect_url" => "/admin/events/new"}}
+  Parameters: %{"_csrf_token" => "MxQVaTMODic9dSAGNxA7Py4UVBpcfxs2zZD3XDVFkEDYYwWOFseElRVY", "vsn" => "2.0.0"}
+08:55:50.283 request_id=FfOESopZ9nA53v4AAAiE [info] Sent 302 in 462ms
+08:55:50.299 request_id=FfOESqblQmgAalQAABAD [info] GET /admin/events/new
+08:55:50.305 request_id=FfOESqblQmgAalQAABAD [info] Sent 200 in 5ms
+08:55:50.515 [info] CONNECTED TO Phoenix.LiveView.Socket in 160µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: %{"_csrf_token" => "INQZkJXaV0d_nglphg1_0-Mo", "locale" => "en", "redirect_url" => nil, "user_id" => 1}}
+  Parameters: %{"_csrf_token" => "cTsALy4fCjgUWCwXOR9aIlgJHDJoRAEX8uQuEURYBhHHWx6R0n-mXiLx", "vsn" => "2.0.0"}
+08:56:44.189 [info] Running MyTubeWeb.Endpoint with cowboy 2.7.0 at 0.0.0.0:4000 (http)
+08:56:44.207 [info] Access MyTubeWeb.Endpoint at http://localhost:4000
+08:56:45.255 [info] CONNECTED TO Phoenix.LiveView.Socket in 389µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: %{"_csrf_token" => "8G9yF-AdkZJe6RlLWRfhISy0", "locale" => "en", "redirect_url" => nil, "user_id" => 1}}
+  Parameters: %{"_csrf_token" => "fChMDD4UdikTBXksTws/fh8KPlsPZ09iDouux97Mx_3IyYS2HXX3F46R", "vsn" => "2.0.0"}
+08:56:45.373 [info] CONNECTED TO Phoenix.LiveView.Socket in 292µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: %{"_csrf_token" => "INQZkJXaV0d_nglphg1_0-Mo", "locale" => "en", "redirect_url" => nil, "user_id" => 1}}
+  Parameters: %{"_csrf_token" => "cTsALy4fCjgUWCwXOR9aIlgJHDJoRAEX8uQuEURYBhHHWx6R0n-mXiLx", "vsn" => "2.0.0"}
+08:56:49.367 request_id=FfOEWGeKwFj6w48AAARh [info] POST /sessions/1
+08:56:49.389 [info] CONNECTED TO Phoenix.LiveView.Socket in 160µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: %{"_csrf_token" => "INQZkJXaV0d_nglphg1_0-Mo", "locale" => "en", "redirect_url" => nil, "user_id" => 1}}
+  Parameters: %{"_csrf_token" => "cTsALy4fCjgUWCwXOR9aIlgJHDJoRAEX8uQuEURYBhHHWx6R0n-mXiLx", "vsn" => "2.0.0"}
+08:56:49.411 request_id=FfOEWGeKwFj6w48AAARh [info] Sent 302 in 43ms
+08:56:49.433 request_id=FfOEWGuJq4jYCqYAAASh [info] GET /
+08:56:49.454 request_id=FfOEWGuJq4jYCqYAAASh [info] Sent 200 in 20ms
+08:56:49.511 request_id=FfOEWHA0pZh08GAAAATh [info] GET /events/2/get_thumb
+08:56:49.514 request_id=FfOEWHA0pZh08GAAAATh [info] Sent 200 in 3ms
+08:56:49.809 request_id=FfOEWIHsK1iPpEsAAAUh [info] GET /
+08:56:49.809 [info] CONNECTED TO Phoenix.LiveView.Socket in 271µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: %{"_csrf_token" => "igZCBxYvyoU1RDdYWqDlgyML", "locale" => "en"}}
+  Parameters: %{"_csrf_token" => "GQ4iEW8rFBoAIAcCHxccLi8GJRVTNhkvpixR-SMlyOR3MSxwxway4OTc", "vsn" => "2.0.0"}
+08:56:49.814 request_id=FfOEWIHsK1iPpEsAAAUh [info] Sent 200 in 5ms
+08:56:49.931 request_id=FfOEWIk3epgmUE4AAAYF [info] GET /events/2/get_thumb
+08:56:49.935 request_id=FfOEWIk3epgmUE4AAAYF [info] Sent 200 in 4ms
+08:56:50.296 [info] CONNECTED TO Phoenix.LiveView.Socket in 259µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: %{"_csrf_token" => "8G9yF-AdkZJe6RlLWRfhISy0", "locale" => "en", "redirect_url" => nil, "user_id" => 1}}
+  Parameters: %{"_csrf_token" => "UwlPMBNMDgkTC3ohQTpcOjUVLx0OJR8EkNvIUaOmxQ0Dwh0vbGIuGvf4", "vsn" => "2.0.0"}
+08:56:50.387 request_id=FfOEWKRj7ijKRDEAAAYl [info] GET /
+08:56:50.390 request_id=FfOEWKRj7ijKRDEAAAYl [info] Sent 200 in 2ms
+08:56:50.451 request_id=FfOEWKgwoeB6LgUAAAVB [info] GET /events/2/get_thumb
+08:56:50.452 request_id=FfOEWKgwoeB6LgUAAAVB [info] Sent 200 in 1ms
+08:56:50.768 [info] CONNECTED TO Phoenix.LiveView.Socket in 227µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: %{"_csrf_token" => "igZCBxYvyoU1RDdYWqDlgyML", "locale" => "en"}}
+  Parameters: %{"_csrf_token" => "KwQSLio8dBlUGDdyMQo0DB9JBi9QEiEeBcHmhD-o-wbCcNPUH8BC7klR", "vsn" => "2.0.0"}
+08:56:52.006 request_id=FfOEWQTgvGgmpiwAAANC [info] GET /sessions/new
+08:56:52.007 request_id=FfOEWQTgvGgmpiwAAANC [info] Sent 200 in 1ms
+08:56:52.027 [info] CONNECTED TO Phoenix.LiveView.Socket in 195µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: %{"_csrf_token" => "igZCBxYvyoU1RDdYWqDlgyML", "locale" => "en"}}
+  Parameters: %{"_csrf_token" => "KwQSLio8dBlUGDdyMQo0DB9JBi9QEiEeBcHmhD-o-wbCcNPUH8BC7klR", "vsn" => "2.0.0"}
+08:56:52.420 [info] CONNECTED TO Phoenix.LiveView.Socket in 156µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: %{"_csrf_token" => "igZCBxYvyoU1RDdYWqDlgyML", "locale" => "en"}}
+  Parameters: %{"_csrf_token" => "IiBoEQEIDxwcXAFlZSpUIXoECjtfOiZ9KG2RCpVje3TT7n0x-uNW8Ck1", "vsn" => "2.0.0"}
+08:56:57.724 request_id=FfOEWlm4E5ggj4wAAAVh [info] POST /sessions
+08:56:57.779 [info] CONNECTED TO Phoenix.LiveView.Socket in 181µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: %{"_csrf_token" => "igZCBxYvyoU1RDdYWqDlgyML", "locale" => "en"}}
+  Parameters: %{"_csrf_token" => "IiBoEQEIDxwcXAFlZSpUIXoECjtfOiZ9KG2RCpVje3TT7n0x-uNW8Ck1", "vsn" => "2.0.0"}
+08:56:58.172 request_id=FfOEWlm4E5ggj4wAAAVh [info] Sent 302 in 447ms
+08:56:58.172 request_id=FfOEWlm4E5ggj4wAAAVh [info] There is a log info
+08:56:58.196 request_id=FfOEWnXU9fCBYRQAAANi [info] GET /
+08:56:58.200 request_id=FfOEWnXU9fCBYRQAAANi [info] Sent 200 in 4ms
+08:56:58.202 [error] #PID<0.764.0> running MyTubeWeb.Endpoint (connection #PID<0.763.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: POST /sessions
+** (exit) an exception was raised:
+    ** (RuntimeError) expected action/2 to return a Plug.Conn, all plugs must receive a connection (conn) and return a connection, got: :ok
+        (my_tube 0.1.0) lib/my_tube_web/controllers/session_controller.ex:1: MyTubeWeb.SessionController.phoenix_controller_pipeline/2
+        (phoenix 1.4.12) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:122: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.12) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+08:56:58.266 request_id=FfOEWnoFutg8J2oAAAbj [info] GET /events/2/get_thumb
+08:56:58.269 request_id=FfOEWnoFutg8J2oAAAbj [info] Sent 200 in 3ms
+08:56:58.421 [info] CONNECTED TO Phoenix.LiveView.Socket in 149µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: %{"_csrf_token" => "igZCBxYvyoU1RDdYWqDlgyML", "locale" => "en", "redirect_url" => nil, "user_id" => 1}}
+  Parameters: %{"_csrf_token" => "IBY+ACBVDk4fOjgBYiM1IzIdEDYjOys/IqdCb-W8fUm00gQzelTZDBfs", "vsn" => "2.0.0"}
+16:27:52.531 [info] Running MyTubeWeb.Endpoint with cowboy 2.7.0 at 0.0.0.0:4000 (http)
+16:27:52.547 [info] Access MyTubeWeb.Endpoint at http://localhost:4000
+16:27:59.170 request_id=FfPri6bQRqgsEh0AAAcB [info] GET /
+16:27:59.296 request_id=FfPri6bQRqgsEh0AAAcB [info] Sent 200 in 126ms
+16:27:59.346 request_id=FfPri7Fe4di1KKMAAAch [info] GET /events/2/get_thumb
+16:27:59.356 request_id=FfPri7Fe4di1KKMAAAch [info] Sent 200 in 10ms
+16:27:59.661 [info] CONNECTED TO Phoenix.LiveView.Socket in 164µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: %{"_csrf_token" => "8G9yF-AdkZJe6RlLWRfhISy0", "locale" => "en", "redirect_url" => nil, "user_id" => 1}}
+  Parameters: %{"_csrf_token" => "dgoLHg5DdCM6NxwEeREhPQhrLlACaxVVNM2gHn5GQmVaOCMq_9H8K8le", "vsn" => "2.0.0"}
+16:28:02.886 request_id=FfPrjIRkYcCBkLkAAAdh [info] GET /
+16:28:02.892 request_id=FfPrjIRkYcCBkLkAAAdh [info] Sent 200 in 6ms
+16:28:02.975 request_id=FfPrjIm3RDCSzrAAAAbk [info] GET /events/2/get_thumb
+16:28:02.983 request_id=FfPrjIm3RDCSzrAAAAbk [info] Sent 200 in 7ms
+16:28:03.252 [info] CONNECTED TO Phoenix.LiveView.Socket in 254µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: %{"_csrf_token" => "8G9yF-AdkZJe6RlLWRfhISy0", "locale" => "en", "redirect_url" => nil, "user_id" => 1}}
+  Parameters: %{"_csrf_token" => "URF0DwgaGR0tYiEfUREnOQgkEgl7BhZIiVMvN7XyF8kzgCKu_vta2Uox", "vsn" => "2.0.0"}
+16:45:54.028 request_id=FfPshel25ei2q-IAAAeB [info] GET /events/2
+16:45:54.040 request_id=FfPshel25ei2q-IAAAeB [info] MOUNT #PID<0.718.0>
+16:45:54.116 request_id=FfPshel25ei2q-IAAAeB [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: false, likes_count: 0, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: false, likes_count: 0, user_id: 1, ...}, changed: %{event: true, event_id: true, like_status: true, likes_count: true, ...}, endpoint: MyTubeWeb.Endpoint, id: "phx-6crl0KviB6E", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+16:45:54.121 request_id=FfPshel25ei2q-IAAAeB [info] Sent 200 in 92ms
+16:45:54.386 [info] CONNECTED TO Phoenix.LiveView.Socket in 156µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: %{"_csrf_token" => "8G9yF-AdkZJe6RlLWRfhISy0", "locale" => "en", "redirect_url" => nil, "user_id" => 1}}
+  Parameters: %{"_csrf_token" => "TjALFA1gIAUpBSAiYTojDzYgHCMaKzQAvw2mKMaaB_jGWhOCarzKSxM0", "vsn" => "2.0.0"}
+16:45:54.505 [info] MOUNT #PID<0.732.0>
+16:45:54.521 [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: false, likes_count: 0, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: false, likes_count: 0, user_id: 1, ...}, changed: %{event: true, event_id: true, like_status: true, likes_count: true, ...}, endpoint: MyTubeWeb.Endpoint, id: "phx-6crl0KviB6E", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+16:45:56.849 [info] CONNECTED TO Phoenix.LiveView.Socket in 242µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: %{"_csrf_token" => "8G9yF-AdkZJe6RlLWRfhISy0", "locale" => "en", "redirect_url" => nil, "user_id" => 1}}
+  Parameters: %{"_csrf_token" => "URF0DwgaGR0tYiEfUREnOQgkEgl7BhZIiVMvN7XyF8kzgCKu_vta2Uox", "vsn" => "2.0.0"}
+17:46:52.431 [info] Running MyTubeWeb.Endpoint with cowboy 2.7.0 at 0.0.0.0:4000 (http)
+17:46:52.451 [info] Access MyTubeWeb.Endpoint at http://localhost:4000
+17:46:53.510 [info] CONNECTED TO Phoenix.LiveView.Socket in 1ms
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: %{"_csrf_token" => "8G9yF-AdkZJe6RlLWRfhISy0", "locale" => "en", "redirect_url" => nil, "user_id" => 1}}
+  Parameters: %{"_csrf_token" => "URF0DwgaGR0tYiEfUREnOQgkEgl7BhZIiVMvN7XyF8kzgCKu_vta2Uox", "vsn" => "2.0.0"}
+17:46:58.513 request_id=FfPv2x2sedhrw7kAAANh [info] GET /
+17:46:58.573 request_id=FfPv2x2sedhrw7kAAANh [info] Sent 200 in 60ms
+17:46:58.627 request_id=FfPv2ySNR3g6h-QAAAEj [info] GET /events/2/get_thumb
+17:46:58.632 request_id=FfPv2ySNR3g6h-QAAAEj [info] Sent 200 in 5ms
+17:46:59.989 [info] CONNECTED TO Phoenix.LiveView.Socket in 183µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: %{"_csrf_token" => "8G9yF-AdkZJe6RlLWRfhISy0", "locale" => "en", "redirect_url" => nil, "user_id" => 1}}
+  Parameters: %{"_csrf_token" => "fDBICWtfc10eaj4MaSgVNmQmXwQcJB1dDwqp-r29u0ti_zyz3t9lUwdm", "vsn" => "2.0.0"}
+17:47:05.977 request_id=FfPv3NqqmOgKOXkAAAFj [info] GET /
+17:47:05.979 request_id=FfPv3NqqmOgKOXkAAAFj [info] Sent 200 in 2ms
+17:47:06.054 request_id=FfPv3N89Cbi_6ocAAACC [info] GET /events/2/get_thumb
+17:47:06.059 request_id=FfPv3N89Cbi_6ocAAACC [info] Sent 200 in 4ms
+17:47:06.256 [info] CONNECTED TO Phoenix.LiveView.Socket in 315µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: %{"_csrf_token" => "igZCBxYvyoU1RDdYWqDlgyML", "locale" => "en", "redirect_url" => nil, "user_id" => 1}}
+  Parameters: %{"_csrf_token" => "AT4pNgNPOicPBDFrAS4jGxsEHi0uJhV0hYsuA7cQvkdZSjGBLuZAI_X8", "vsn" => "2.0.0"}
+17:47:38.929 request_id=FfPv5Ia62DAi2k0AAACi [info] GET /events/2
+17:47:38.940 request_id=FfPv5Ia62DAi2k0AAACi [info] MOUNT #PID<0.642.0>
+17:47:38.982 request_id=FfPv5Ia62DAi2k0AAACi [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: false, likes_count: 0, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: false, likes_count: 0, user_id: 1, ...}, changed: %{event: true, event_id: true, like_status: true, likes_count: true, ...}, endpoint: MyTubeWeb.Endpoint, id: "phx-hy8loNpNA6E", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+17:47:38.988 [info] CONNECTED TO Phoenix.LiveView.Socket in 1ms
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: %{"_csrf_token" => "igZCBxYvyoU1RDdYWqDlgyML", "locale" => "en", "redirect_url" => nil, "user_id" => 1}}
+  Parameters: %{"_csrf_token" => "AT4pNgNPOicPBDFrAS4jGxsEHi0uJhV0hYsuA7cQvkdZSjGBLuZAI_X8", "vsn" => "2.0.0"}
+17:47:38.988 request_id=FfPv5Ia62DAi2k0AAACi [info] Sent 200 in 59ms
+17:47:39.209 [info] CONNECTED TO Phoenix.LiveView.Socket in 236µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: %{"_csrf_token" => "igZCBxYvyoU1RDdYWqDlgyML", "locale" => "en", "redirect_url" => nil, "user_id" => 1}}
+  Parameters: %{"_csrf_token" => "OSIFDjUBYC4-JA9kOHwDEzBHEToiHwIrPE_Mwy9XGKZUj8gJg6UVEfOg", "vsn" => "2.0.0"}
+17:47:39.227 [info] MOUNT #PID<0.662.0>
+17:47:39.236 [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: false, likes_count: 0, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: false, likes_count: 0, user_id: 1, ...}, changed: %{event: true, event_id: true, like_status: true, likes_count: true, ...}, endpoint: MyTubeWeb.Endpoint, id: "phx-hy8loNpNA6E", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+17:47:44.457 request_id=FfPv5dBEuND6w48AAAPB [info] GET /events/2
+17:47:44.459 request_id=FfPv5dBEuND6w48AAAPB [info] MOUNT #PID<0.667.0>
+17:47:44.464 request_id=FfPv5dBEuND6w48AAAPB [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: false, likes_count: 0, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: false, likes_count: 0, user_id: 1, ...}, changed: %{event: true, event_id: true, like_status: true, likes_count: true, ...}, endpoint: MyTubeWeb.Endpoint, id: "phx-0FzwCMOPAMI", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+17:47:44.464 request_id=FfPv5dBEuND6w48AAAPB [info] Sent 200 in 7ms
+17:47:44.711 [info] CONNECTED TO Phoenix.LiveView.Socket in 250µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: %{"_csrf_token" => "8G9yF-AdkZJe6RlLWRfhISy0", "locale" => "en", "redirect_url" => nil, "user_id" => 1}}
+  Parameters: %{"_csrf_token" => "fT1YTh58OSY-GHMocitfdAENLzp_H0x0Eza7XQxBUB9MDy38V_IR6L5D", "vsn" => "2.0.0"}
+17:47:44.793 [info] MOUNT #PID<0.681.0>
+17:47:44.801 [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: false, likes_count: 0, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: false, likes_count: 0, user_id: 1, ...}, changed: %{event: true, event_id: true, like_status: true, likes_count: true, ...}, endpoint: MyTubeWeb.Endpoint, id: "phx-0FzwCMOPAMI", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+17:47:47.263 [info] RENDER #PID<0.681.0>
+17:47:47.278 [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: true, likes_count: 1, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: true, likes_count: 1, user_id: 1, ...}, changed: %{like_status: true, likes_count: true}, endpoint: MyTubeWeb.Endpoint, id: "phx-0FzwCMOPAMI", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+17:47:47.278 [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: true, likes_count: 1, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: true, likes_count: 1, user_id: 1, ...}, changed: %{like_status: true, likes_count: true}, endpoint: MyTubeWeb.Endpoint, id: "phx-hy8loNpNA6E", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+17:47:48.073 [info] RENDER #PID<0.681.0>
+17:47:48.082 [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: false, likes_count: 0, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: false, likes_count: 0, user_id: 1, ...}, changed: %{like_status: true, likes_count: true}, endpoint: MyTubeWeb.Endpoint, id: "phx-0FzwCMOPAMI", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+17:47:48.082 [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: false, likes_count: 0, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: false, likes_count: 0, user_id: 1, ...}, changed: %{like_status: true, likes_count: true}, endpoint: MyTubeWeb.Endpoint, id: "phx-hy8loNpNA6E", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+17:47:48.713 [info] RENDER #PID<0.681.0>
+17:47:48.719 [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: true, likes_count: 1, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: true, likes_count: 1, user_id: 1, ...}, changed: %{like_status: true, likes_count: true}, endpoint: MyTubeWeb.Endpoint, id: "phx-0FzwCMOPAMI", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+17:47:48.719 [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: true, likes_count: 1, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: true, likes_count: 1, user_id: 1, ...}, changed: %{like_status: true, likes_count: true}, endpoint: MyTubeWeb.Endpoint, id: "phx-hy8loNpNA6E", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+17:47:50.783 [info] RENDER #PID<0.681.0>
+17:47:50.789 [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: false, likes_count: 0, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: false, likes_count: 0, user_id: 1, ...}, changed: %{like_status: true, likes_count: true}, endpoint: MyTubeWeb.Endpoint, id: "phx-0FzwCMOPAMI", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+17:47:50.789 [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: false, likes_count: 0, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: false, likes_count: 0, user_id: 1, ...}, changed: %{like_status: true, likes_count: true}, endpoint: MyTubeWeb.Endpoint, id: "phx-hy8loNpNA6E", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+17:47:51.413 [info] RENDER #PID<0.681.0>
+17:47:51.419 [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: true, likes_count: 1, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: true, likes_count: 1, user_id: 1, ...}, changed: %{like_status: true, likes_count: true}, endpoint: MyTubeWeb.Endpoint, id: "phx-0FzwCMOPAMI", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+17:47:51.419 [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: true, likes_count: 1, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: true, likes_count: 1, user_id: 1, ...}, changed: %{like_status: true, likes_count: true}, endpoint: MyTubeWeb.Endpoint, id: "phx-hy8loNpNA6E", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+17:47:51.975 [info] RENDER #PID<0.681.0>
+17:47:51.981 [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: false, likes_count: 0, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: false, likes_count: 0, user_id: 1, ...}, changed: %{like_status: true, likes_count: true}, endpoint: MyTubeWeb.Endpoint, id: "phx-0FzwCMOPAMI", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+17:47:51.981 [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: false, likes_count: 0, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: false, likes_count: 0, user_id: 1, ...}, changed: %{like_status: true, likes_count: true}, endpoint: MyTubeWeb.Endpoint, id: "phx-hy8loNpNA6E", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+17:47:52.898 [info] RENDER #PID<0.681.0>
+17:47:52.902 [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: true, likes_count: 1, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: true, likes_count: 1, user_id: 1, ...}, changed: %{like_status: true, likes_count: true}, endpoint: MyTubeWeb.Endpoint, id: "phx-0FzwCMOPAMI", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+17:47:52.903 [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: true, likes_count: 1, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: true, likes_count: 1, user_id: 1, ...}, changed: %{like_status: true, likes_count: true}, endpoint: MyTubeWeb.Endpoint, id: "phx-hy8loNpNA6E", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+17:47:53.370 [info] RENDER #PID<0.681.0>
+17:47:53.376 [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: false, likes_count: 0, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: false, likes_count: 0, user_id: 1, ...}, changed: %{like_status: true, likes_count: true}, endpoint: MyTubeWeb.Endpoint, id: "phx-0FzwCMOPAMI", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+17:47:53.376 [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: false, likes_count: 0, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: false, likes_count: 0, user_id: 1, ...}, changed: %{like_status: true, likes_count: true}, endpoint: MyTubeWeb.Endpoint, id: "phx-hy8loNpNA6E", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+17:48:04.462 request_id=FfPv6nii2KDPgWkAAAPh [info] GET /
+17:48:04.471 request_id=FfPv6nii2KDPgWkAAAPh [info] Sent 200 in 8ms
+17:48:04.520 request_id=FfPv6nwWa_CPpEsAAAQB [info] GET /events/2/get_thumb
+17:48:04.521 request_id=FfPv6nwWa_CPpEsAAAQB [info] Sent 200 in 1ms
+17:48:04.936 [info] REFUSED CONNECTION TO Phoenix.LiveView.Socket in 386µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: nil}
+  Parameters: %{"_csrf_token" => "PzR9FmY7Wx0fcVBlfzI-C2YNOjY3DUkZV_KS3AhnQC763wYr1fkDAhyk", "vsn" => "2.0.0"}
+17:48:05.943 [info] REFUSED CONNECTION TO Phoenix.LiveView.Socket in 260µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: nil}
+  Parameters: %{"_csrf_token" => "PzR9FmY7Wx0fcVBlfzI-C2YNOjY3DUkZV_KS3AhnQC763wYr1fkDAhyk", "vsn" => "2.0.0"}
+17:48:06.945 [info] REFUSED CONNECTION TO Phoenix.LiveView.Socket in 213µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: nil}
+  Parameters: %{"_csrf_token" => "PzR9FmY7Wx0fcVBlfzI-C2YNOjY3DUkZV_KS3AhnQC763wYr1fkDAhyk", "vsn" => "2.0.0"}
+17:48:07.965 [info] REFUSED CONNECTION TO Phoenix.LiveView.Socket in 335µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Connect Info: %{session: nil}
+  Parameters: %{"_csrf_token" => "PzR9FmY7Wx0fcVBlfzI-C2YNOjY3DUkZV_KS3AhnQC763wYr1fkDAhyk", "vsn" => "2.0.0"}
+17:49:23.551 [info] RENDER #PID<0.681.0>
+17:49:23.558 [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: true, likes_count: 1, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: true, likes_count: 1, user_id: 1, ...}, changed: %{like_status: true, likes_count: true}, endpoint: MyTubeWeb.Endpoint, id: "phx-0FzwCMOPAMI", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+17:49:23.559 [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: true, likes_count: 1, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: true, likes_count: 1, user_id: 1, ...}, changed: %{like_status: true, likes_count: true}, endpoint: MyTubeWeb.Endpoint, id: "phx-hy8loNpNA6E", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+17:49:24.845 [info] RENDER #PID<0.681.0>
+17:49:24.849 [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: false, likes_count: 0, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: false, likes_count: 0, user_id: 1, ...}, changed: %{like_status: true, likes_count: true}, endpoint: MyTubeWeb.Endpoint, id: "phx-0FzwCMOPAMI", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+17:49:24.849 [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: false, likes_count: 0, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: false, likes_count: 0, user_id: 1, ...}, changed: %{like_status: true, likes_count: true}, endpoint: MyTubeWeb.Endpoint, id: "phx-hy8loNpNA6E", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+17:49:25.902 [info] RENDER #PID<0.681.0>
+17:49:25.908 [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: true, likes_count: 1, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: true, likes_count: 1, user_id: 1, ...}, changed: %{like_status: true, likes_count: true}, endpoint: MyTubeWeb.Endpoint, id: "phx-0FzwCMOPAMI", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+17:49:25.909 [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: true, likes_count: 1, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: true, likes_count: 1, user_id: 1, ...}, changed: %{like_status: true, likes_count: true}, endpoint: MyTubeWeb.Endpoint, id: "phx-hy8loNpNA6E", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+17:49:26.589 [info] RENDER #PID<0.681.0>
+17:49:26.597 [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: false, likes_count: 0, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: false, likes_count: 0, user_id: 1, ...}, changed: %{like_status: true, likes_count: true}, endpoint: MyTubeWeb.Endpoint, id: "phx-0FzwCMOPAMI", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}
+17:49:26.597 [info] ASSIGNS %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, inserted_at: ~U[2020-02-15 05:15:54Z], liked_users: #Ecto.Association.NotLoaded<association :liked_users is not loaded>, likes_count: 0, medium: %{file_name: "small.mp4", updated_at: ~N[2020-02-15 05:15:54]}, medium_uuid: "c336b9ea-b362-4011-84d2-e7ad0a643b7f", title: "test", updated_at: ~U[2020-02-15 05:15:54Z], user_id: 1, viewed_users: #Ecto.Association.NotLoaded<association :viewed_users is not loaded>, views_count: 1}, event_id: "2", like_status: false, likes_count: 0, live_view_module: MyTubeWeb.Live.Event.Show, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "test", id: 2, ...}, event_id: "2", like_status: false, likes_count: 0, user_id: 1, ...}, changed: %{like_status: true, likes_count: true}, endpoint: MyTubeWeb.Endpoint, id: "phx-hy8loNpNA6E", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, user_id: 1, views_count: 1}

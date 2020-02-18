@@ -3,23 +3,11 @@ defmodule MyTubeWeb.Live.Event.Show do
   require Logger
 
   alias MyTube.{Accounts, Core, Liking, Viewing, Repo}
+  alias MyTubeWeb.PageView
 
   def render(assigns) do
     Logger.info("ASSIGNS #{inspect assigns}")
-
-    ~L"""
-    <p><%= inspect @event %></p>
-    <p>User ID <%= @user_id %></p>
-    <label>Likes: <%= @likes_count %></label>
-    <label>Views: <%= @views_count %></label>
-    <%= if @user_id do %>
-      <%= if @like_status do %>
-        <button phx-click="incr">-</button>
-      <% else %>
-        <button phx-click="incr">+</button>
-      <% end %>
-    <% end %>
-    """
+    PageView.render("live_show.html", assigns)
   end
 
   def mount(%{"id" => id} = _params, %{"user_id" => user_id} = session, socket) do

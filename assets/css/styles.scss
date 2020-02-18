@@ -1,6 +1,32 @@
+:root {
+  --page-background: #ecf0f1;
+  --placeholder-color: #7f8c8d;
+  --page-text: #121212;
+  --search-bg: #121212;
+  --image-grayscale: 0;
+  --image-opacity: 100%;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --page-background: #2d3239;
+    --placeholder-color: #e9d970;
+    --search-bg: #75715e;
+    --page-text: #75715e;
+    --image-grayscale: 50%;
+    --image-opacity: 60%;
+  }
+}
+
 body { 
-  // font-size: 80%; 
-  background-color: #ecf0f1;
+  font-size: 80%; 
+  background-color: var(--page-background);
+  color: var(--page-text);
+}
+
+img,
+video {
+  filter: unquote("grayscale(var(--image-grayscale)) opacity(var(--image-opacity))");
 }
 
 // Fix for settings dropdown on breadcrumb
@@ -37,11 +63,8 @@ dl.dl-horizontal dd { margin-left: 120px; }
 
 // Search form style
 
-$placeholder-color: #7f8c8d;
-$search-bg: #121212;
-
 #search-form {
-  background-color: $search-bg;
+  background-color: var(--search-bg);
   border-radius: 2px 0 0 2px;
   padding: 2px 6px;
 
@@ -57,13 +80,13 @@ $search-bg: #121212;
   }
 
   ::placeholder {
-    color: $placeholder-color;
+    color: var(--placeholder-color);
     opacity: 1;
   }
   :-ms-input-placeholder {
-    color: $placeholder-color;
+    color: var(--placeholder-color);
   }
   ::-ms-input-placeholder {
-    color: $placeholder-color;
+    color: var(--placeholder-color);
   }
 }

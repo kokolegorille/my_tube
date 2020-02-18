@@ -14,7 +14,11 @@
             #class: "card-link"
           %>
 
-          <%= link("Live Show", to: Routes.live_path(@conn, MyTubeWeb.Live.Event.Show, event), class: "card-link") %>
+          <%= 
+            link("Live Show", 
+            to: Routes.live_path(@conn, MyTubeWeb.Live.Event.Show, event), 
+            class: "card-link") 
+          %>
 
         </div>
       </div>

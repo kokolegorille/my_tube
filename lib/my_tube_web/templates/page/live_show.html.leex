@@ -1,0 +1,15 @@
+<p><%= inspect @event %></p>
+<p>User ID <%= @user_id %></p>
+<label>Views: <%= @views_count %></label>
+<label>Likes: <%= @likes_count %></label>
+<%= if @user_id do %>
+  <%= if @like_status do %>
+    <a phx-click="incr">
+      <%= fa("heart", class: "text-danger") %>
+    </a>
+  <% else %>
+    <a phx-click="incr">
+      <%= fa("heart", class: "text-secondary") %>
+    </a>
+  <% end %>
+<% end %>

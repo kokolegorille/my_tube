@@ -18,7 +18,7 @@ defmodule MyTubeWeb.PageController do
         |> redirect(to: Routes.page_path(conn, :index))
       %Event{} = event ->
 
-        # Increment views count & notify pubsub
+        # Increment views count
         user = conn.assigns.current_user
         event = if user do
           case Viewing.view(user, event) do

@@ -20,10 +20,35 @@ config :my_tube, MyTubeWeb.Endpoint,
     signing_salt: "L+TUlmWe+oP81lUh/VGCP+daxzD/cCZ1"
   ]
 
-# Configures Elixir's Logger
-config :logger, :console,
+# # Configures Elixir's Logger
+# config :logger, :console,
+#   format: "$time $metadata[$level] $message\n",
+#   metadata: [:request_id]
+
+# config :logger,
+#   backends: [{LoggerFileBackend, :error_log}]
+# config :logger, :error_log,
+#   path: "/var/log/my_tube/error.log",
+#   level: :error
+
+config :logger,
+  backends: [
+    {LoggerFileBackend, :info},
+    {LoggerFileBackend, :error}
+  ]
+
+config :logger, :error,
   format: "$time $metadata[$level] $message\n",
-  metadata: [:request_id]
+  metadata: [:request_id],
+  path: "my_tube_error.log",
+  level: :error
+
+config :logger, :info,
+  format: "$time $metadata[$level] $message\n",
+  metadata: [:request_id],
+  path: "my_tube_info.log",
+  level: :info
+
 
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
@@ -38,6 +63,12 @@ config :waffle,
   # There is a timeout for large files
   # But increasin does not solve it...
   # version_timeout: 150_000
+
+# Oban
+config :my_tube, Oban,
+  repo: MyTube.Repo,
+  prune: {:maxlen, 10_000},
+  queues: [default: 10, events: 50, media: 20]
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.

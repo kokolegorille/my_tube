@@ -36,7 +36,7 @@ defmodule MyTube.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.4.12"},
+      {:phoenix, "~> 1.4.13"},
       {:phoenix_pubsub, "~> 1.1"},
       {:phoenix_ecto, "~> 4.0"},
       {:ecto_sql, "~> 3.1"},
@@ -53,6 +53,9 @@ defmodule MyTube.MixProject do
       {:waffle_ecto, "~> 0.0.7"},
       {:uuid, "~> 1.1"},
       {:argon2_elixir, "~> 2.1"},
+      #
+      {:oban, "~> 1.0"},
+      {:logger_file_backend, "~> 0.0.11"},
       #
       {:dialyxir, "~> 1.0.0-rc.7", only: [:dev], runtime: false},
       {:credo, "~> 1.1", only: [:dev], runtime: false},

@@ -8,12 +8,9 @@ defmodule MyTube.Application do
   def start(_type, _args) do
     # List all child processes to be supervised
     children = [
-      # Start the Ecto repository
       MyTube.Repo,
-      # Start the endpoint when the application starts
-      MyTubeWeb.Endpoint
-      # Starts a worker by calling: MyTube.Worker.start_link(arg)
-      # {MyTube.Worker, arg},
+      MyTubeWeb.Endpoint,
+      {Oban, Application.get_env(:my_tube, Oban)}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

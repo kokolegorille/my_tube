@@ -271,6 +271,10 @@ defmodule MyTube.Accounts do
       {:name, name}, query ->
         pattern = "%#{name}%"
         from q in query, where: ilike(q.name, ^pattern)
+
+      arg, query ->
+        Logger.info("args is not matched in query #{inspect arg}")
+        query
     end)
   end
 end

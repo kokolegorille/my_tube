@@ -16,3 +16,5 @@ config :my_tube, MyTubeWeb.Endpoint,
 
 # Print only warnings and errors during test
 config :logger, level: :warn
+
+config :my_tube, Oban, crontab: false, queues: false, prune: :disabled
