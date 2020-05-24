@@ -1,4 +1,8 @@
-<p><%= inspect @event %></p>
+<%= if @likes_count > 0 do %>
+  <p><%= inspect @event %></p>
+  <%= live_component @socket, EventComponent, event: @event %>
+<% end %>
+
 <p>User ID <%= @user_id %></p>
 <label>Views: <%= @views_count %></label>
 <label>Likes: <%= @likes_count %></label>
@@ -13,3 +17,14 @@
     </a>
   <% end %>
 <% end %>
+
+<%= inspect @question_data.question_changeset %>
+
+<%= 
+  live_component @socket, 
+  MyTubeWeb.Live.Components.QuestionForm, 
+  id: :question_form,
+  question_data: @question_data
+  #disable_question: @disable_question,
+  #question_changeset: @question_changeset 
+%>

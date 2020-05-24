@@ -15,7 +15,8 @@ config :my_tube, MyTubeWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "ZKLoZ8S/IDDHBicCUpIW7opVlJmKGKc3/CBF1L+XJ9zrqrg2JSHrxTohZSr6IMPJ",
   render_errors: [view: MyTubeWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: MyTube.PubSub, adapter: Phoenix.PubSub.PG2],
+  # pubsub: [name: MyTube.PubSub, adapter: Phoenix.PubSub.PG2],
+  pubsub_server: MyTube.PubSub,
   live_view: [
     signing_salt: "L+TUlmWe+oP81lUh/VGCP+daxzD/cCZ1"
   ]
@@ -58,7 +59,8 @@ config :my_tube, MyTubeWeb.Gettext, default_locale: "fr", locales: ~w(en fr)
 
 # Waffle
 config :waffle,
-  storage: Waffle.Storage.Local
+  storage: Waffle.Storage.Local,
+  storage_dir_prefix: "/Users/sqrt/DATA_2020/my_tube_uploads"
   # default timeout is 15_000
   # There is a timeout for large files
   # But increasin does not solve it...

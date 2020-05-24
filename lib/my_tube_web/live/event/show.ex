@@ -3,6 +3,7 @@ defmodule MyTubeWeb.Live.Event.Show do
   require Logger
 
   alias MyTube.{Accounts, Core, Liking, Viewing, Repo}
+  alias Core.Question
   alias MyTubeWeb.PageView
 
   def render(assigns) do
@@ -41,6 +42,13 @@ defmodule MyTubeWeb.Live.Event.Show do
       subscribe_to_event("event:#{event.id}")
     end
 
+    question_changeset = Core.change_question(%Question{})
+
+    question_data = %{
+      question_changeset: question_changeset,
+      disable_question: true
+    }
+
     socket = socket
     |> assign(:event, event)
     |> assign(:likes_count, event.likes_count)
@@ -48,11 +56,21 @@ defmodule MyTubeWeb.Live.Event.Show do
     |> assign(user_id: session["user_id"])
     |> assign(like_status: like_status)
     |> assign(event_id: id)
+    |> assign(question_data: question_data)
+
+    # |> assign(question_changeset: question_changeset)
+    # |> assign(disable_question: true)
 
     {:ok, socket}
   end
   def mount(%{"id" => id} = _params, _session, socket) do
     event = Core.get_event id
+    question_changeset = Core.change_question(%Question{})
+
+    question_data = %{
+      question_changeset: question_changeset,
+      disable_question: true
+    }
 
     socket = socket
     |> assign(:event, event)
@@ -61,6 +79,10 @@ defmodule MyTubeWeb.Live.Event.Show do
     |> assign(user_id: nil)
     |> assign(like_status: false)
     |> assign(event_id: event.id)
+    |> assign(question_data: question_data)
+
+    # |> assign(question_changeset: question_changeset)
+    # |> assign(disable_question: true)
 
     {:ok, socket}
   end
@@ -93,6 +115,11 @@ defmodule MyTubeWeb.Live.Event.Show do
     {:noreply, socket}
   end
 
+  def handle_event(type, event, socket) do
+    IO.inspect {type, event}
+    {:noreply, socket}
+  end
+
   def handle_info(%{type: "event_liked"} = message, socket) do
     IO.inspect message, label: "MESSAGE RECEIVED"
 
@@ -113,7 +140,32 @@ defmodule MyTubeWeb.Live.Event.Show do
     {:noreply, socket}
   end
 
+  def handle_info(%{type: "enable_question"}, socket) do
+    # socket = assign(socket, :disable_question, false)
+
+    socket = assign(socket, question_data: %{socket.assigns.question_data | disable_question: false})
+
+    {:noreply, socket}
+  end
+
+  def handle_info(%{type: "disable_question"}, socket) do
+    # socket = assign(socket, :disable_question, true)
+
+    socket = assign(socket, question_data: %{socket.assigns.question_data | disable_question: true})
+
+    {:noreply, socket}
+  end
+
+  def handle_info(%{type: "save", payload: payload}, socket) do
+    IO.puts "SAVING #{inspect payload}"
+
+    socket = assign(socket, question_data: %{socket.assigns.question_data | disable_question: true})
+
+    {:noreply, socket}
+  end
+
   def handle_info(message, socket) do
+    IO.inspect message, label: "INFO"
     Logger.info("Unmatched message #{inspect(message)}")
     {:noreply, socket}
   end

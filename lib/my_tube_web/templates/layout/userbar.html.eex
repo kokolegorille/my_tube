@@ -10,7 +10,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="userNavbar">
-    <div class="navbar-nav ml-auto">
+    <div class="navbar-nav mr-auto">
       <%= render_existing view_module(@conn), "object_menu.html", assigns %>
     </div>
     <ul class="navbar-nav">

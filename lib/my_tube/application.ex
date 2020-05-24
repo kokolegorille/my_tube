@@ -9,6 +9,10 @@ defmodule MyTube.Application do
     # List all child processes to be supervised
     children = [
       MyTube.Repo,
+      # Start the Telemetry supervisor
+      MyTubeWeb.Telemetry,
+      # Start the PubSub system
+      {Phoenix.PubSub, name: MyTube.PubSub},
       MyTubeWeb.Endpoint,
       {Oban, Application.get_env(:my_tube, Oban)}
     ]

@@ -7,7 +7,7 @@ defmodule MyTube.Core do
   require Logger
 
   alias MyTube.{Core, Uploaders, Repo}
-  alias Core.Event
+  alias Core.{Event, Question}
 
   @doc """
   Returns the list of events query.
@@ -175,6 +175,19 @@ defmodule MyTube.Core do
   """
   def change_event(%Event{} = event) do
     Event.changeset(event, %{})
+  end
+
+  @doc """
+  Returns an `%Ecto.Changeset{}` for tracking question changes.
+
+  ## Examples
+
+      iex> change_question(question)
+      %Ecto.Changeset{source: %Question{}}
+
+  """
+  def change_question(%Question{} = question) do
+    Question.changeset(question, %{})
   end
 
   ########################################

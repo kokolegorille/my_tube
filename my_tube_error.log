@@ -13,3 +13,1283 @@ Request: POST /sessions
         (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
         (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
         (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+14:29:35.897 [error] #PID<0.621.0> running MyTubeWeb.Endpoint (connection #PID<0.616.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/2/get_thumb
+** (exit) an exception was raised:
+    ** (File.Error) could not read file stats "/Users/sqrt/DATA_2020/uploads/event/media/thumb/c336b9ea-b362-4011-84d2-e7ad0a643b7f/small.png": no such file or directory
+        (elixir 1.10.1) lib/file.ex:403: File.stat!/2
+        (plug_cowboy 2.1.2) lib/plug/cowboy/conn.ex:41: Plug.Cowboy.Conn.send_file/6
+        (plug 1.9.0) lib/plug/conn.ex:458: Plug.Conn.send_file/5
+        (my_tube 0.1.0) lib/my_tube_web/controllers/page_controller.ex:1: MyTubeWeb.PageController.action/2
+        (my_tube 0.1.0) lib/my_tube_web/controllers/page_controller.ex:1: MyTubeWeb.PageController.phoenix_controller_pipeline/2
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+14:29:40.073 [error] #PID<0.644.0> running MyTubeWeb.Endpoint (connection #PID<0.615.0>, stream id 5) terminated
+Server: localhost:4000 (http)
+Request: GET /events/2/get_thumb
+** (exit) an exception was raised:
+    ** (File.Error) could not read file stats "/Users/sqrt/DATA_2020/uploads/event/media/thumb/c336b9ea-b362-4011-84d2-e7ad0a643b7f/small.png": no such file or directory
+        (elixir 1.10.1) lib/file.ex:403: File.stat!/2
+        (plug_cowboy 2.1.2) lib/plug/cowboy/conn.ex:41: Plug.Cowboy.Conn.send_file/6
+        (plug 1.9.0) lib/plug/conn.ex:458: Plug.Conn.send_file/5
+        (my_tube 0.1.0) lib/my_tube_web/controllers/page_controller.ex:1: MyTubeWeb.PageController.action/2
+        (my_tube 0.1.0) lib/my_tube_web/controllers/page_controller.ex:1: MyTubeWeb.PageController.phoenix_controller_pipeline/2
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+14:35:36.469 [error] #PID<0.948.0> running MyTubeWeb.Endpoint (connection #PID<0.935.0>, stream id 4) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1/get_thumb
+** (exit) an exception was raised:
+    ** (File.Error) could not read file stats "/Users/sqrt/DATA_2020/my_tube_uploads/event/media/thumb/d84ef198-e553-42c1-9b1c-7ec1bc71c092/small.png": no such file or directory
+        (elixir 1.10.1) lib/file.ex:403: File.stat!/2
+        (plug_cowboy 2.1.2) lib/plug/cowboy/conn.ex:41: Plug.Cowboy.Conn.send_file/6
+        (plug 1.9.0) lib/plug/conn.ex:458: Plug.Conn.send_file/5
+        (my_tube 0.1.0) lib/my_tube_web/controllers/page_controller.ex:1: MyTubeWeb.PageController.action/2
+        (my_tube 0.1.0) lib/my_tube_web/controllers/page_controller.ex:1: MyTubeWeb.PageController.phoenix_controller_pipeline/2
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+16:01:10.312 [error] GenServer #PID<0.1476.0> terminating
+** (FunctionClauseError) no function clause matching in MyTubeWeb.Live.Event.Show.handle_event/3
+    (my_tube 0.1.0) lib/my_tube_web/live/event/show.ex:68: MyTubeWeb.Live.Event.Show.handle_event("save", %{}, #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "qq", id: 1, ...}, event_id: "1", like_status: false, likes_count: 0, user_id: 1, ...}, changed: %{}, endpoint: MyTubeWeb.Endpoint, id: "phx-Om9TwHKdDqc", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>)
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:93: Phoenix.LiveView.Channel.handle_info/2
+    (stdlib 3.11.2) gen_server.erl:637: :gen_server.try_dispatch/4
+    (stdlib 3.11.2) gen_server.erl:711: :gen_server.handle_msg/6
+    (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+Last message: %Phoenix.Socket.Message{event: "event", join_ref: "4", payload: %{"event" => "save", "type" => "form", "value" => ""}, ref: "5", topic: "lv:phx-Om9TwHKdDqc"}
+State: %{components: {%{}, %{}, 0}, join_ref: "4", serializer: Phoenix.Socket.V2.JSONSerializer, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "qq", id: 1, ...}, event_id: "1", like_status: false, likes_count: 0, user_id: 1, ...}, changed: %{}, endpoint: MyTubeWeb.Endpoint, id: "phx-Om9TwHKdDqc", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, topic: "lv:phx-Om9TwHKdDqc", transport_pid: #PID<0.1469.0>, uri: %URI{authority: nil, fragment: nil, host: "localhost", path: nil, port: 4000, query: nil, scheme: "http", userinfo: nil}}
+16:01:13.215 [error] GenServer #PID<0.1482.0> terminating
+** (FunctionClauseError) no function clause matching in MyTubeWeb.Live.Event.Show.handle_event/3
+    (my_tube 0.1.0) lib/my_tube_web/live/event/show.ex:68: MyTubeWeb.Live.Event.Show.handle_event("save", %{}, #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "qq", id: 1, ...}, event_id: "1", like_status: false, likes_count: 0, user_id: 1, ...}, changed: %{}, endpoint: MyTubeWeb.Endpoint, id: "phx-Om9TwHKdDqc", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>)
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:93: Phoenix.LiveView.Channel.handle_info/2
+    (stdlib 3.11.2) gen_server.erl:637: :gen_server.try_dispatch/4
+    (stdlib 3.11.2) gen_server.erl:711: :gen_server.handle_msg/6
+    (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+Last message: %Phoenix.Socket.Message{event: "event", join_ref: "6", payload: %{"event" => "save", "type" => "form", "value" => ""}, ref: "7", topic: "lv:phx-Om9TwHKdDqc"}
+State: %{components: {%{}, %{}, 0}, join_ref: "6", serializer: Phoenix.Socket.V2.JSONSerializer, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "qq", id: 1, ...}, event_id: "1", like_status: false, likes_count: 0, user_id: 1, ...}, changed: %{}, endpoint: MyTubeWeb.Endpoint, id: "phx-Om9TwHKdDqc", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, topic: "lv:phx-Om9TwHKdDqc", transport_pid: #PID<0.1469.0>, uri: %URI{authority: nil, fragment: nil, host: "localhost", path: nil, port: 4000, query: nil, scheme: "http", userinfo: nil}}
+16:06:05.705 [error] GenServer #PID<0.811.0> terminating
+** (FunctionClauseError) no function clause matching in MyTubeWeb.Live.Event.Show.handle_event/3
+    (my_tube 0.1.0) lib/my_tube_web/live/event/show.ex:68: MyTubeWeb.Live.Event.Show.handle_event("save", %{}, #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "qq", id: 1, ...}, event_id: "1", like_status: false, likes_count: 0, user_id: 1, ...}, changed: %{}, endpoint: MyTubeWeb.Endpoint, id: "phx-B3m-IJ7TAeU", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>)
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:93: Phoenix.LiveView.Channel.handle_info/2
+    (stdlib 3.11.2) gen_server.erl:637: :gen_server.try_dispatch/4
+    (stdlib 3.11.2) gen_server.erl:711: :gen_server.handle_msg/6
+    (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+Last message: %Phoenix.Socket.Message{event: "event", join_ref: "4", payload: %{"event" => "save", "type" => "form", "value" => ""}, ref: "5", topic: "lv:phx-B3m-IJ7TAeU"}
+State: %{components: {%{}, %{}, 0}, join_ref: "4", serializer: Phoenix.Socket.V2.JSONSerializer, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "qq", id: 1, ...}, event_id: "1", like_status: false, likes_count: 0, user_id: 1, ...}, changed: %{}, endpoint: MyTubeWeb.Endpoint, id: "phx-B3m-IJ7TAeU", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, topic: "lv:phx-B3m-IJ7TAeU", transport_pid: #PID<0.803.0>, uri: %URI{authority: nil, fragment: nil, host: "localhost", path: nil, port: 4000, query: nil, scheme: "http", userinfo: nil}}
+16:06:13.108 [error] GenServer #PID<0.824.0> terminating
+** (FunctionClauseError) no function clause matching in MyTubeWeb.Live.Event.Show.handle_event/3
+    (my_tube 0.1.0) lib/my_tube_web/live/event/show.ex:68: MyTubeWeb.Live.Event.Show.handle_event("save", %{}, #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "qq", id: 1, ...}, event_id: "1", like_status: false, likes_count: 0, user_id: 1, ...}, changed: %{}, endpoint: MyTubeWeb.Endpoint, id: "phx-B3m-IJ7TAeU", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>)
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:93: Phoenix.LiveView.Channel.handle_info/2
+    (stdlib 3.11.2) gen_server.erl:637: :gen_server.try_dispatch/4
+    (stdlib 3.11.2) gen_server.erl:711: :gen_server.handle_msg/6
+    (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+Last message: %Phoenix.Socket.Message{event: "event", join_ref: "6", payload: %{"event" => "save", "type" => "form", "value" => ""}, ref: "7", topic: "lv:phx-B3m-IJ7TAeU"}
+State: %{components: {%{}, %{}, 0}, join_ref: "6", serializer: Phoenix.Socket.V2.JSONSerializer, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "qq", id: 1, ...}, event_id: "1", like_status: false, likes_count: 0, user_id: 1, ...}, changed: %{}, endpoint: MyTubeWeb.Endpoint, id: "phx-B3m-IJ7TAeU", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, topic: "lv:phx-B3m-IJ7TAeU", transport_pid: #PID<0.803.0>, uri: %URI{authority: nil, fragment: nil, host: "localhost", path: nil, port: 4000, query: nil, scheme: "http", userinfo: nil}}
+16:06:22.040 [error] GenServer #PID<0.825.0> terminating
+** (FunctionClauseError) no function clause matching in MyTubeWeb.Live.Event.Show.handle_event/3
+    (my_tube 0.1.0) lib/my_tube_web/live/event/show.ex:68: MyTubeWeb.Live.Event.Show.handle_event("save", %{}, #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "qq", id: 1, ...}, event_id: "1", like_status: false, likes_count: 0, user_id: 1, ...}, changed: %{}, endpoint: MyTubeWeb.Endpoint, id: "phx-B3m-IJ7TAeU", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>)
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:93: Phoenix.LiveView.Channel.handle_info/2
+    (stdlib 3.11.2) gen_server.erl:637: :gen_server.try_dispatch/4
+    (stdlib 3.11.2) gen_server.erl:711: :gen_server.handle_msg/6
+    (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+Last message: %Phoenix.Socket.Message{event: "event", join_ref: "8", payload: %{"event" => "save", "type" => "form", "value" => ""}, ref: "9", topic: "lv:phx-B3m-IJ7TAeU"}
+State: %{components: {%{}, %{}, 0}, join_ref: "8", serializer: Phoenix.Socket.V2.JSONSerializer, socket: #Phoenix.LiveView.Socket<assigns: %{event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "qq", id: 1, ...}, event_id: "1", like_status: false, likes_count: 0, user_id: 1, ...}, changed: %{}, endpoint: MyTubeWeb.Endpoint, id: "phx-B3m-IJ7TAeU", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, topic: "lv:phx-B3m-IJ7TAeU", transport_pid: #PID<0.803.0>, uri: %URI{authority: nil, fragment: nil, host: "localhost", path: nil, port: 4000, query: nil, scheme: "http", userinfo: nil}}
+16:19:54.829 [error] #PID<0.1156.0> running MyTubeWeb.Endpoint (connection #PID<0.1154.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @conn not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:event, :event_id, :like_status, :likes_count, :live_view_module, :socket, :user_id, :views_count]
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/engine.ex:777: Phoenix.LiveView.Engine.fetch_assign!/2
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:36: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+16:20:07.317 [error] #PID<0.1184.0> running MyTubeWeb.Endpoint (connection #PID<0.1182.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @conn not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:event, :event_id, :like_status, :likes_count, :live_view_module, :socket, :user_id, :views_count]
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/engine.ex:777: Phoenix.LiveView.Engine.fetch_assign!/2
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:36: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+16:20:33.771 [error] #PID<0.1194.0> running MyTubeWeb.Endpoint (connection #PID<0.1192.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (BadMapError) expected a map, got: nil
+        (elixir 1.10.1) lib/map.ex:452: Map.get(nil, :action, nil)
+        (my_tube 0.1.0) lib/my_tube_web/helpers/bootstrap_helper.ex:270: MyTubeWeb.Helpers.BootstrapHelper.state_class/3
+        (my_tube 0.1.0) lib/my_tube_web/helpers/bootstrap_helper.ex:244: MyTubeWeb.Helpers.BootstrapHelper.do_input/5
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:37: anonymous fn/1 in MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_html 2.13.4) lib/phoenix_html/form.ex:377: Phoenix.HTML.Form.form_for/4
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:36: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+16:20:43.249 [error] #PID<0.1222.0> running MyTubeWeb.Endpoint (connection #PID<0.1220.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (Protocol.UndefinedError) protocol Phoenix.HTML.FormData not implemented for %{} of type Map. This protocol is implemented for the following type(s): Ecto.Changeset, Plug.Conn, Atom
+        (phoenix_html 2.13.4) lib/phoenix_html/form_data.ex:1: Phoenix.HTML.FormData.impl_for!/1
+        (phoenix_html 2.13.4) lib/phoenix_html/form_data.ex:15: Phoenix.HTML.FormData.to_form/2
+        (phoenix_html 2.13.4) lib/phoenix_html/form.ex:325: Phoenix.HTML.Form.form_for/3
+        (phoenix_html 2.13.4) lib/phoenix_html/form.ex:376: Phoenix.HTML.Form.form_for/4
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:36: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+16:21:07.869 [error] #PID<0.1251.0> running MyTubeWeb.Endpoint (connection #PID<0.1250.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (BadMapError) expected a map, got: :test
+        (elixir 1.10.1) lib/map.ex:452: Map.get(:test, :action, nil)
+        (my_tube 0.1.0) lib/my_tube_web/helpers/bootstrap_helper.ex:270: MyTubeWeb.Helpers.BootstrapHelper.state_class/3
+        (my_tube 0.1.0) lib/my_tube_web/helpers/bootstrap_helper.ex:244: MyTubeWeb.Helpers.BootstrapHelper.do_input/5
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:37: anonymous fn/1 in MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_html 2.13.4) lib/phoenix_html/form.ex:377: Phoenix.HTML.Form.form_for/4
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:36: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+16:29:43.938 [error] #PID<0.1287.0> running MyTubeWeb.Endpoint (connection #PID<0.1285.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (BadMapError) expected a map, got: :test
+        (elixir 1.10.1) lib/map.ex:452: Map.get(:test, :action, nil)
+        (my_tube 0.1.0) lib/my_tube_web/helpers/bootstrap_helper.ex:270: MyTubeWeb.Helpers.BootstrapHelper.state_class/3
+        (my_tube 0.1.0) lib/my_tube_web/helpers/bootstrap_helper.ex:244: MyTubeWeb.Helpers.BootstrapHelper.do_input/5
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:37: anonymous fn/1 in MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_html 2.13.4) lib/phoenix_html/form.ex:377: Phoenix.HTML.Form.form_for/4
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:36: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+16:51:35.080 [error] #PID<0.598.0> running MyTubeWeb.Endpoint (connection #PID<0.596.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (BadMapError) expected a map, got: :test
+        (elixir 1.10.1) lib/map.ex:452: Map.get(:test, :action, nil)
+        (my_tube 0.1.0) lib/my_tube_web/helpers/bootstrap_helper.ex:270: MyTubeWeb.Helpers.BootstrapHelper.state_class/3
+        (my_tube 0.1.0) lib/my_tube_web/helpers/bootstrap_helper.ex:244: MyTubeWeb.Helpers.BootstrapHelper.do_input/5
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:40: anonymous fn/1 in MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_html 2.13.4) lib/phoenix_html/form.ex:377: Phoenix.HTML.Form.form_for/4
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:39: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+16:51:37.870 [error] #PID<0.611.0> running MyTubeWeb.Endpoint (connection #PID<0.596.0>, stream id 4) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (BadMapError) expected a map, got: :test
+        (elixir 1.10.1) lib/map.ex:452: Map.get(:test, :action, nil)
+        (my_tube 0.1.0) lib/my_tube_web/helpers/bootstrap_helper.ex:270: MyTubeWeb.Helpers.BootstrapHelper.state_class/3
+        (my_tube 0.1.0) lib/my_tube_web/helpers/bootstrap_helper.ex:244: MyTubeWeb.Helpers.BootstrapHelper.do_input/5
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:40: anonymous fn/1 in MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_html 2.13.4) lib/phoenix_html/form.ex:377: Phoenix.HTML.Form.form_for/4
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:39: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+21:33:02.227 [error] #PID<0.968.0> running MyTubeWeb.Endpoint (connection #PID<0.966.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function MyTube.Core.change_question/0 is undefined or private
+        (my_tube 0.1.0) MyTube.Core.change_question()
+        (my_tube 0.1.0) lib/my_tube_web/live/event/show.ex:44: MyTubeWeb.Live.Event.Show.mount/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:179: Phoenix.LiveView.Utils.maybe_call_mount!/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:266: Phoenix.LiveView.Static.call_mount_and_handle_params!/6
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:108: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+21:36:16.162 [error] #PID<0.1221.0> running MyTubeWeb.Endpoint (connection #PID<0.1219.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @changeset not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:event, :event_id, :like_status, :likes_count, :live_view_module, :question_changeset, :socket, :user_id, :views_count]
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/engine.ex:777: Phoenix.LiveView.Engine.fetch_assign!/2
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:37: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+21:39:17.061 [error] #PID<0.1369.0> running MyTubeWeb.Endpoint (connection #PID<0.1367.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (FunctionClauseError) no function clause matching in Phoenix.HTML.Form.form_for/4
+        (phoenix_html 2.13.4) lib/phoenix_html/form.ex:375: Phoenix.HTML.Form.form_for(#Ecto.Changeset<action: nil, changes: %{}, errors: [content: {"can't be blank", [validation: :required]}], data: #MyTube.Core.Question<>, valid?: false>, [phx_change: :change, phx_submit: :save], [], "#")
+        (phoenix_html 2.13.4) lib/phoenix_html/form.ex:376: Phoenix.HTML.Form.form_for/4
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:37: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+07:03:28.257 [error] #PID<0.2045.0> running MyTubeWeb.Endpoint (connection #PID<0.2044.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function MyTubeWeb.Live.Components.QuestionFormComponent.__live__/0 is undefined (module MyTubeWeb.Live.Components.QuestionFormComponent is not available)
+        MyTubeWeb.Live.Components.QuestionFormComponent.__live__()
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:43: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+07:17:08.202 [error] #PID<0.2484.0> running MyTubeWeb.Endpoint (connection #PID<0.2482.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) invalid result returned from MyTubeWeb.Live.Components.QuestionForm.update/2.
+
+Expected {:ok, socket}, got: :ok
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:215: Phoenix.LiveView.Utils.maybe_call_update!/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:398: anonymous fn/5 in Phoenix.LiveView.Diff.render_pending_components/5
+        (elixir 1.10.1) lib/enum.ex:2111: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (stdlib 3.11.2) maps.erl:232: :maps.fold_1/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:382: Phoenix.LiveView.Diff.render_pending_components/5
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:86: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:248: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+07:17:15.359 [error] #PID<0.2498.0> running MyTubeWeb.Endpoint (connection #PID<0.2496.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) invalid result returned from MyTubeWeb.Live.Components.QuestionForm.update/2.
+
+Expected {:ok, socket}, got: :ok
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:215: Phoenix.LiveView.Utils.maybe_call_update!/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:398: anonymous fn/5 in Phoenix.LiveView.Diff.render_pending_components/5
+        (elixir 1.10.1) lib/enum.ex:2111: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (stdlib 3.11.2) maps.erl:232: :maps.fold_1/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:382: Phoenix.LiveView.Diff.render_pending_components/5
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:86: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:248: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+07:17:54.882 [error] #PID<0.2508.0> running MyTubeWeb.Endpoint (connection #PID<0.2507.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @question_changeset not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:live_view_module, :socket]
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/engine.ex:777: Phoenix.LiveView.Engine.fetch_assign!/2
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_question_form.html.leex:2: MyTubeWeb.PageView."live_question_form.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:447: Phoenix.LiveView.Diff.render_component/7
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:399: anonymous fn/5 in Phoenix.LiveView.Diff.render_pending_components/5
+        (elixir 1.10.1) lib/enum.ex:2111: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (stdlib 3.11.2) maps.erl:232: :maps.fold_1/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:382: Phoenix.LiveView.Diff.render_pending_components/5
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:86: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:248: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+07:18:06.963 [error] #PID<0.2537.0> running MyTubeWeb.Endpoint (connection #PID<0.2536.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @question_changeset not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:live_view_module, :socket]
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/engine.ex:777: Phoenix.LiveView.Engine.fetch_assign!/2
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_question_form.html.leex:2: MyTubeWeb.PageView."live_question_form.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:447: Phoenix.LiveView.Diff.render_component/7
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:399: anonymous fn/5 in Phoenix.LiveView.Diff.render_pending_components/5
+        (elixir 1.10.1) lib/enum.ex:2111: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (stdlib 3.11.2) maps.erl:232: :maps.fold_1/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:382: Phoenix.LiveView.Diff.render_pending_components/5
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:86: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:248: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+07:20:56.316 [error] #PID<0.2569.0> running MyTubeWeb.Endpoint (connection #PID<0.2567.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @question_changeset not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:live_view_module, :socket]
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/engine.ex:777: Phoenix.LiveView.Engine.fetch_assign!/2
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_question_form.html.leex:2: MyTubeWeb.PageView."live_question_form.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:447: Phoenix.LiveView.Diff.render_component/7
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:399: anonymous fn/5 in Phoenix.LiveView.Diff.render_pending_components/5
+        (elixir 1.10.1) lib/enum.ex:2111: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (stdlib 3.11.2) maps.erl:232: :maps.fold_1/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:382: Phoenix.LiveView.Diff.render_pending_components/5
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:86: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:248: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+07:20:57.504 [error] #PID<0.2576.0> running MyTubeWeb.Endpoint (connection #PID<0.2567.0>, stream id 3) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @question_changeset not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:live_view_module, :socket]
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/engine.ex:777: Phoenix.LiveView.Engine.fetch_assign!/2
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_question_form.html.leex:2: MyTubeWeb.PageView."live_question_form.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:447: Phoenix.LiveView.Diff.render_component/7
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:399: anonymous fn/5 in Phoenix.LiveView.Diff.render_pending_components/5
+        (elixir 1.10.1) lib/enum.ex:2111: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (stdlib 3.11.2) maps.erl:232: :maps.fold_1/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:382: Phoenix.LiveView.Diff.render_pending_components/5
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:86: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:248: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+07:21:15.732 [error] #PID<0.2594.0> running MyTubeWeb.Endpoint (connection #PID<0.2592.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @question_changeset not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:live_view_module, :socket]
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/engine.ex:777: Phoenix.LiveView.Engine.fetch_assign!/2
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_question_form.html.leex:2: MyTubeWeb.PageView."live_question_form.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:447: Phoenix.LiveView.Diff.render_component/7
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:399: anonymous fn/5 in Phoenix.LiveView.Diff.render_pending_components/5
+        (elixir 1.10.1) lib/enum.ex:2111: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (stdlib 3.11.2) maps.erl:232: :maps.fold_1/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:382: Phoenix.LiveView.Diff.render_pending_components/5
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:86: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:248: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+11:02:13.833 [error] #PID<0.922.0> running MyTubeWeb.Endpoint (connection #PID<0.921.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @disqble_question not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:disable_question, :event, :event_id, :like_status, :likes_count, :live_view_module, :question_changeset, :socket, :user_id, :views_count]
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/engine.ex:777: Phoenix.LiveView.Engine.fetch_assign!/2
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:27: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+15:10:59.088 [error] GenServer #PID<0.824.0> terminating
+** (ArgumentError) invalid return from MyTubeWeb.Live.Components.QuestionForm.handle_event/3 callback.
+
+Expected: {:noreply, %Socket{}}
+Got: %{"_csrf_token" => "DQtyFStrNAkCHn9dQA0HBxI_NVEtGU1i5LKlmFumiD58v_kKEmS9dJ4R", "_target" => ["question", "content"], "_utf8" => "✓", "question" => %{"content" => "l"}}
+
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:300: anonymous fn/4 in Phoenix.LiveView.Channel.component_handle_event/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:132: Phoenix.LiveView.Diff.with_component/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:291: Phoenix.LiveView.Channel.component_handle_event/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:87: Phoenix.LiveView.Channel.handle_info/2
+    (stdlib 3.11.2) gen_server.erl:637: :gen_server.try_dispatch/4
+    (stdlib 3.11.2) gen_server.erl:711: :gen_server.handle_msg/6
+    (stdlib 3.11.2) proc_lib.erl:259: :proc_lib.wake_up/3
+Last message: %Phoenix.Socket.Message{event: "event", join_ref: "77", payload: %{"cid" => 0, "event" => "change", "type" => "form", "value" => "_csrf_token=DQtyFStrNAkCHn9dQA0HBxI_NVEtGU1i5LKlmFumiD58v_kKEmS9dJ4R&_utf8=%E2%9C%93&question%5Bcontent%5D=l&_target=question%5Bcontent%5D"}, ref: "194", topic: "lv:phx-rMv72qIJBIQ"}
+State: %{components: {%{{MyTubeWeb.Live.Components.QuestionForm, :question_form} => {0, %{disable_question: true, id: :question_form, question_changeset: #Ecto.Changeset<action: nil, changes: %{}, errors: [content: {"can't be blank", [validation: :required]}], data: #MyTube.Core.Question<>, valid?: false>}, %{}, {339335001541921608376181035276752501140, %{}}}}, %{0 => {MyTubeWeb.Live.Components.QuestionForm, :question_form}}, 1}, join_ref: "77", serializer: Phoenix.Socket.V2.JSONSerializer, socket: #Phoenix.LiveView.Socket<assigns: %{disable_question: true, event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "qq", ...}, event_id: "1", like_status: false, likes_count: 0, ...}, changed: %{}, endpoint: MyTubeWeb.Endpoint, id: "phx-rMv72qIJBIQ", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, topic: "lv:phx-rMv72qIJBIQ", transport_pid: #PID<0.821.0>, uri: %URI{authority: nil, fragment: nil, host: "localhost", path: nil, port: 4000, query: nil, scheme: "http", userinfo: nil}}
+15:11:06.068 [error] GenServer #PID<0.863.0> terminating
+** (ArgumentError) invalid return from MyTubeWeb.Live.Components.QuestionForm.handle_event/3 callback.
+
+Expected: {:noreply, %Socket{}}
+Got: %{"_csrf_token" => "cyZIOBYeNzM7KxMKfRE1FjQQDis-Y0p7KaqAP3vWPqYoKCYZcBhCw03K", "_target" => ["question", "content"], "_utf8" => "✓", "question" => %{"content" => "lk"}}
+
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:300: anonymous fn/4 in Phoenix.LiveView.Channel.component_handle_event/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:132: Phoenix.LiveView.Diff.with_component/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:291: Phoenix.LiveView.Channel.component_handle_event/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:87: Phoenix.LiveView.Channel.handle_info/2
+    (stdlib 3.11.2) gen_server.erl:637: :gen_server.try_dispatch/4
+    (stdlib 3.11.2) gen_server.erl:711: :gen_server.handle_msg/6
+    (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+Last message: %Phoenix.Socket.Message{event: "event", join_ref: "195", payload: %{"cid" => 0, "event" => "change", "type" => "form", "value" => "_csrf_token=cyZIOBYeNzM7KxMKfRE1FjQQDis-Y0p7KaqAP3vWPqYoKCYZcBhCw03K&_utf8=%E2%9C%93&question%5Bcontent%5D=lk&_target=question%5Bcontent%5D"}, ref: "196", topic: "lv:phx-rMv72qIJBIQ"}
+State: %{components: {%{{MyTubeWeb.Live.Components.QuestionForm, :question_form} => {0, %{disable_question: true, id: :question_form, question_changeset: #Ecto.Changeset<action: nil, changes: %{}, errors: [content: {"can't be blank", [validation: :required]}], data: #MyTube.Core.Question<>, valid?: false>}, %{}, {339335001541921608376181035276752501140, %{}}}}, %{0 => {MyTubeWeb.Live.Components.QuestionForm, :question_form}}, 1}, join_ref: "195", serializer: Phoenix.Socket.V2.JSONSerializer, socket: #Phoenix.LiveView.Socket<assigns: %{disable_question: true, event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "qq", ...}, event_id: "1", like_status: false, likes_count: 0, ...}, changed: %{}, endpoint: MyTubeWeb.Endpoint, id: "phx-rMv72qIJBIQ", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, topic: "lv:phx-rMv72qIJBIQ", transport_pid: #PID<0.821.0>, uri: %URI{authority: nil, fragment: nil, host: "localhost", path: nil, port: 4000, query: nil, scheme: "http", userinfo: nil}}
+15:11:19.302 [error] GenServer #PID<0.864.0> terminating
+** (ArgumentError) invalid return from MyTubeWeb.Live.Components.QuestionForm.handle_event/3 callback.
+
+Expected: {:noreply, %Socket{}}
+Got: %{"_csrf_token" => "XXRmCSQfMFwGah5VTzEVDiEwFDsCFAxUe3_pb2q8m0T0ycyBvbrSKGud", "_target" => ["question", "content"], "_utf8" => "✓", "question" => %{"content" => "k"}}
+
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:300: anonymous fn/4 in Phoenix.LiveView.Channel.component_handle_event/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:132: Phoenix.LiveView.Diff.with_component/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:291: Phoenix.LiveView.Channel.component_handle_event/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:87: Phoenix.LiveView.Channel.handle_info/2
+    (stdlib 3.11.2) gen_server.erl:637: :gen_server.try_dispatch/4
+    (stdlib 3.11.2) gen_server.erl:711: :gen_server.handle_msg/6
+    (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+Last message: %Phoenix.Socket.Message{event: "event", join_ref: "197", payload: %{"cid" => 0, "event" => "change", "type" => "form", "value" => "_csrf_token=XXRmCSQfMFwGah5VTzEVDiEwFDsCFAxUe3_pb2q8m0T0ycyBvbrSKGud&_utf8=%E2%9C%93&question%5Bcontent%5D=k&_target=question%5Bcontent%5D"}, ref: "198", topic: "lv:phx-rMv72qIJBIQ"}
+State: %{components: {%{{MyTubeWeb.Live.Components.QuestionForm, :question_form} => {0, %{disable_question: true, id: :question_form, question_changeset: #Ecto.Changeset<action: nil, changes: %{}, errors: [content: {"can't be blank", [validation: :required]}], data: #MyTube.Core.Question<>, valid?: false>}, %{}, {339335001541921608376181035276752501140, %{}}}}, %{0 => {MyTubeWeb.Live.Components.QuestionForm, :question_form}}, 1}, join_ref: "197", serializer: Phoenix.Socket.V2.JSONSerializer, socket: #Phoenix.LiveView.Socket<assigns: %{disable_question: true, event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "qq", ...}, event_id: "1", like_status: false, likes_count: 0, ...}, changed: %{}, endpoint: MyTubeWeb.Endpoint, id: "phx-rMv72qIJBIQ", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, topic: "lv:phx-rMv72qIJBIQ", transport_pid: #PID<0.821.0>, uri: %URI{authority: nil, fragment: nil, host: "localhost", path: nil, port: 4000, query: nil, scheme: "http", userinfo: nil}}
+15:11:47.035 [error] GenServer #PID<0.615.0> terminating
+** (ArgumentError) invalid return from MyTubeWeb.Live.Components.QuestionForm.handle_event/3 callback.
+
+Expected: {:noreply, %Socket{}}
+Got: %{"_csrf_token" => "UhVTMXJqFgEeOR1UBD45BC9rCw4TPTZqjRjH4GWeucW12lUHx9mfZnOZ", "_target" => ["question", "content"], "_utf8" => "✓", "question" => %{"content" => "k"}}
+
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:300: anonymous fn/4 in Phoenix.LiveView.Channel.component_handle_event/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:132: Phoenix.LiveView.Diff.with_component/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:291: Phoenix.LiveView.Channel.component_handle_event/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:87: Phoenix.LiveView.Channel.handle_info/2
+    (stdlib 3.11.2) gen_server.erl:637: :gen_server.try_dispatch/4
+    (stdlib 3.11.2) gen_server.erl:711: :gen_server.handle_msg/6
+    (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+Last message: %Phoenix.Socket.Message{event: "event", join_ref: "4", payload: %{"cid" => 0, "event" => "change", "type" => "form", "value" => "_csrf_token=UhVTMXJqFgEeOR1UBD45BC9rCw4TPTZqjRjH4GWeucW12lUHx9mfZnOZ&_utf8=%E2%9C%93&question%5Bcontent%5D=k&_target=question%5Bcontent%5D"}, ref: "5", topic: "lv:phx-PYm6kMKSAoE"}
+State: %{components: {%{{MyTubeWeb.Live.Components.QuestionForm, :question_form} => {0, %{disable_question: true, id: :question_form, question_changeset: #Ecto.Changeset<action: nil, changes: %{}, errors: [content: {"can't be blank", [validation: :required]}], data: #MyTube.Core.Question<>, valid?: false>}, %{}, {339335001541921608376181035276752501140, %{}}}}, %{0 => {MyTubeWeb.Live.Components.QuestionForm, :question_form}}, 1}, join_ref: "4", serializer: Phoenix.Socket.V2.JSONSerializer, socket: #Phoenix.LiveView.Socket<assigns: %{disable_question: true, event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "qq", ...}, event_id: "1", like_status: false, likes_count: 0, ...}, changed: %{}, endpoint: MyTubeWeb.Endpoint, id: "phx-PYm6kMKSAoE", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, topic: "lv:phx-PYm6kMKSAoE", transport_pid: #PID<0.611.0>, uri: %URI{authority: nil, fragment: nil, host: "localhost", path: nil, port: 4000, query: nil, scheme: "http", userinfo: nil}}
+15:35:16.469 [error] GenServer #PID<0.723.0> terminating
+** (ArgumentError) argument error
+    :erlang.length("a")
+    (my_tube 0.1.0) lib/my_tube_web/live/components/question_form.ex:21: MyTubeWeb.Live.Components.QuestionForm.handle_event/3
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:292: anonymous fn/4 in Phoenix.LiveView.Channel.component_handle_event/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:132: Phoenix.LiveView.Diff.with_component/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:291: Phoenix.LiveView.Channel.component_handle_event/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:87: Phoenix.LiveView.Channel.handle_info/2
+    (stdlib 3.11.2) gen_server.erl:637: :gen_server.try_dispatch/4
+    (stdlib 3.11.2) gen_server.erl:711: :gen_server.handle_msg/6
+    (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+Last message: %Phoenix.Socket.Message{event: "event", join_ref: "4", payload: %{"cid" => 0, "event" => "change", "type" => "form", "value" => "_csrf_token=CXQNOyRDEQBaLA8pQDM7HxMCCl4GHRN8134BbnPd1vELvaWSDPl6ONjL&_utf8=%E2%9C%93&question%5Bcontent%5D=a&_target=question%5Bcontent%5D"}, ref: "5", topic: "lv:phx-YcbfgJuyAMM"}
+State: %{components: {%{{MyTubeWeb.Live.Components.QuestionForm, :question_form} => {0, %{disable_question: true, id: :question_form, question_changeset: #Ecto.Changeset<action: nil, changes: %{}, errors: [content: {"can't be blank", [validation: :required]}], data: #MyTube.Core.Question<>, valid?: false>}, %{}, {339335001541921608376181035276752501140, %{}}}}, %{0 => {MyTubeWeb.Live.Components.QuestionForm, :question_form}}, 1}, join_ref: "4", serializer: Phoenix.Socket.V2.JSONSerializer, socket: #Phoenix.LiveView.Socket<assigns: %{disable_question: true, event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "qq", ...}, event_id: "1", like_status: false, likes_count: 0, ...}, changed: %{}, endpoint: MyTubeWeb.Endpoint, id: "phx-YcbfgJuyAMM", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, topic: "lv:phx-YcbfgJuyAMM", transport_pid: #PID<0.716.0>, uri: %URI{authority: nil, fragment: nil, host: "localhost", path: nil, port: 4000, query: nil, scheme: "http", userinfo: nil}}
+15:35:28.565 [error] GenServer #PID<0.729.0> terminating
+** (ArgumentError) argument error
+    :erlang.length("s")
+    (my_tube 0.1.0) lib/my_tube_web/live/components/question_form.ex:21: MyTubeWeb.Live.Components.QuestionForm.handle_event/3
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:292: anonymous fn/4 in Phoenix.LiveView.Channel.component_handle_event/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:132: Phoenix.LiveView.Diff.with_component/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:291: Phoenix.LiveView.Channel.component_handle_event/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:87: Phoenix.LiveView.Channel.handle_info/2
+    (stdlib 3.11.2) gen_server.erl:637: :gen_server.try_dispatch/4
+    (stdlib 3.11.2) gen_server.erl:711: :gen_server.handle_msg/6
+    (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+Last message: %Phoenix.Socket.Message{event: "event", join_ref: "6", payload: %{"cid" => 0, "event" => "change", "type" => "form", "value" => "_csrf_token=eRVKMDEaBgEjDhsLcQ01LRgjNjJ_MUgAARsIw7GeHTQnG_YaOqPZ6b10&_utf8=%E2%9C%93&question%5Bcontent%5D=s&_target=question%5Bcontent%5D"}, ref: "7", topic: "lv:phx-YcbfgJuyAMM"}
+State: %{components: {%{{MyTubeWeb.Live.Components.QuestionForm, :question_form} => {0, %{disable_question: true, id: :question_form, question_changeset: #Ecto.Changeset<action: nil, changes: %{}, errors: [content: {"can't be blank", [validation: :required]}], data: #MyTube.Core.Question<>, valid?: false>}, %{}, {339335001541921608376181035276752501140, %{}}}}, %{0 => {MyTubeWeb.Live.Components.QuestionForm, :question_form}}, 1}, join_ref: "6", serializer: Phoenix.Socket.V2.JSONSerializer, socket: #Phoenix.LiveView.Socket<assigns: %{disable_question: true, event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "qq", ...}, event_id: "1", like_status: false, likes_count: 0, ...}, changed: %{}, endpoint: MyTubeWeb.Endpoint, id: "phx-YcbfgJuyAMM", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, topic: "lv:phx-YcbfgJuyAMM", transport_pid: #PID<0.716.0>, uri: %URI{authority: nil, fragment: nil, host: "localhost", path: nil, port: 4000, query: nil, scheme: "http", userinfo: nil}}
+15:36:48.575 [error] GenServer #PID<0.616.0> terminating
+** (ArgumentError) argument error
+    :erlang.length("s")
+    (my_tube 0.1.0) lib/my_tube_web/live/components/question_form.ex:21: MyTubeWeb.Live.Components.QuestionForm.handle_event/3
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:292: anonymous fn/4 in Phoenix.LiveView.Channel.component_handle_event/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:132: Phoenix.LiveView.Diff.with_component/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:291: Phoenix.LiveView.Channel.component_handle_event/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:87: Phoenix.LiveView.Channel.handle_info/2
+    (stdlib 3.11.2) gen_server.erl:637: :gen_server.try_dispatch/4
+    (stdlib 3.11.2) gen_server.erl:711: :gen_server.handle_msg/6
+    (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+Last message: %Phoenix.Socket.Message{event: "event", join_ref: "4", payload: %{"cid" => 0, "event" => "change", "type" => "form", "value" => "_csrf_token=TnRhHD9YBgZcax88ezUoYS89UjkxPilSv3XeyuGb71UYMgD-xo4QxmPb&_utf8=%E2%9C%93&question%5Bcontent%5D=s&_target=question%5Bcontent%5D"}, ref: "5", topic: "lv:phx-aZCQKMKSAkE"}
+State: %{components: {%{{MyTubeWeb.Live.Components.QuestionForm, :question_form} => {0, %{disable_question: true, id: :question_form, question_changeset: #Ecto.Changeset<action: nil, changes: %{}, errors: [content: {"can't be blank", [validation: :required]}], data: #MyTube.Core.Question<>, valid?: false>}, %{}, {339335001541921608376181035276752501140, %{}}}}, %{0 => {MyTubeWeb.Live.Components.QuestionForm, :question_form}}, 1}, join_ref: "4", serializer: Phoenix.Socket.V2.JSONSerializer, socket: #Phoenix.LiveView.Socket<assigns: %{disable_question: true, event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "qq", ...}, event_id: "1", like_status: false, likes_count: 0, ...}, changed: %{}, endpoint: MyTubeWeb.Endpoint, id: "phx-aZCQKMKSAkE", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, topic: "lv:phx-aZCQKMKSAkE", transport_pid: #PID<0.612.0>, uri: %URI{authority: nil, fragment: nil, host: "localhost", path: nil, port: 4000, query: nil, scheme: "http", userinfo: nil}}
+15:37:27.188 [error] GenServer #PID<0.671.0> terminating
+** (ArgumentError) argument error
+    :erlang.length("a")
+    (my_tube 0.1.0) lib/my_tube_web/live/components/question_form.ex:22: MyTubeWeb.Live.Components.QuestionForm.handle_event/3
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:292: anonymous fn/4 in Phoenix.LiveView.Channel.component_handle_event/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:132: Phoenix.LiveView.Diff.with_component/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:291: Phoenix.LiveView.Channel.component_handle_event/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:87: Phoenix.LiveView.Channel.handle_info/2
+    (stdlib 3.11.2) gen_server.erl:637: :gen_server.try_dispatch/4
+    (stdlib 3.11.2) gen_server.erl:711: :gen_server.handle_msg/6
+    (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+Last message: %Phoenix.Socket.Message{event: "event", join_ref: "4", payload: %{"cid" => 0, "event" => "change", "type" => "form", "value" => "_csrf_token=QRFUS3F_Jz0YNz1XDxAqeC5lIDs4A0pJyVm27RfYsmw29BF4y7FSqP3y&_utf8=%E2%9C%93&question%5Bcontent%5D=a&_target=question%5Bcontent%5D"}, ref: "5", topic: "lv:phx-fHqvgA82AkM"}
+State: %{components: {%{{MyTubeWeb.Live.Components.QuestionForm, :question_form} => {0, %{disable_question: true, id: :question_form, question_changeset: #Ecto.Changeset<action: nil, changes: %{}, errors: [content: {"can't be blank", [validation: :required]}], data: #MyTube.Core.Question<>, valid?: false>}, %{}, {339335001541921608376181035276752501140, %{}}}}, %{0 => {MyTubeWeb.Live.Components.QuestionForm, :question_form}}, 1}, join_ref: "4", serializer: Phoenix.Socket.V2.JSONSerializer, socket: #Phoenix.LiveView.Socket<assigns: %{disable_question: true, event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "qq", ...}, event_id: "1", like_status: false, likes_count: 0, ...}, changed: %{}, endpoint: MyTubeWeb.Endpoint, id: "phx-fHqvgA82AkM", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, topic: "lv:phx-fHqvgA82AkM", transport_pid: #PID<0.663.0>, uri: %URI{authority: nil, fragment: nil, host: "localhost", path: nil, port: 4000, query: nil, scheme: "http", userinfo: nil}}
+15:38:58.482 [error] GenServer #PID<0.724.0> terminating
+** (ArgumentError) argument error
+    :erlang.length("a")
+    (my_tube 0.1.0) lib/my_tube_web/live/components/question_form.ex:24: MyTubeWeb.Live.Components.QuestionForm.handle_event/3
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:292: anonymous fn/4 in Phoenix.LiveView.Channel.component_handle_event/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:132: Phoenix.LiveView.Diff.with_component/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:291: Phoenix.LiveView.Channel.component_handle_event/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:87: Phoenix.LiveView.Channel.handle_info/2
+    (stdlib 3.11.2) gen_server.erl:637: :gen_server.try_dispatch/4
+    (stdlib 3.11.2) gen_server.erl:711: :gen_server.handle_msg/6
+    (stdlib 3.11.2) proc_lib.erl:259: :proc_lib.wake_up/3
+Last message: %Phoenix.Socket.Message{event: "event", join_ref: "4", payload: %{"cid" => 0, "event" => "change", "type" => "form", "value" => "_csrf_token=UhRTOjZeMVUTNxgfeRkZJggDMikAGA1HjSjCpsp1xmRzOKuj_QTAIKtw&_utf8=%E2%9C%93&question%5Bcontent%5D=a&_target=question%5Bcontent%5D"}, ref: "5", topic: "lv:phx-ORrTaFr8AAY"}
+State: %{components: {%{{MyTubeWeb.Live.Components.QuestionForm, :question_form} => {0, %{disable_question: true, id: :question_form, question_changeset: #Ecto.Changeset<action: nil, changes: %{}, errors: [content: {"can't be blank", [validation: :required]}], data: #MyTube.Core.Question<>, valid?: false>}, %{}, {339335001541921608376181035276752501140, %{}}}}, %{0 => {MyTubeWeb.Live.Components.QuestionForm, :question_form}}, 1}, join_ref: "4", serializer: Phoenix.Socket.V2.JSONSerializer, socket: #Phoenix.LiveView.Socket<assigns: %{disable_question: true, event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "qq", ...}, event_id: "1", like_status: false, likes_count: 0, ...}, changed: %{}, endpoint: MyTubeWeb.Endpoint, id: "phx-ORrTaFr8AAY", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, topic: "lv:phx-ORrTaFr8AAY", transport_pid: #PID<0.716.0>, uri: %URI{authority: nil, fragment: nil, host: "localhost", path: nil, port: 4000, query: nil, scheme: "http", userinfo: nil}}
+15:40:27.864 [error] GenServer #PID<0.798.0> terminating
+** (ArgumentError) argument error
+    :erlang.length("s")
+    (my_tube 0.1.0) lib/my_tube_web/live/components/question_form.ex:24: MyTubeWeb.Live.Components.QuestionForm.handle_event/3
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:292: anonymous fn/4 in Phoenix.LiveView.Channel.component_handle_event/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/diff.ex:132: Phoenix.LiveView.Diff.with_component/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:291: Phoenix.LiveView.Channel.component_handle_event/5
+    (phoenix_live_view 0.6.0) lib/phoenix_live_view/channel.ex:87: Phoenix.LiveView.Channel.handle_info/2
+    (stdlib 3.11.2) gen_server.erl:637: :gen_server.try_dispatch/4
+    (stdlib 3.11.2) gen_server.erl:711: :gen_server.handle_msg/6
+    (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+Last message: %Phoenix.Socket.Message{event: "event", join_ref: "4", payload: %{"cid" => 0, "event" => "change", "type" => "form", "value" => "_csrf_token=VQRQPQB_eAYsDzgoBD4FABk3NDEtAUBWmCiDFR9bGUrM2liLNeRYdR9f&_utf8=%E2%9C%93&question%5Bcontent%5D=s&_target=question%5Bcontent%5D"}, ref: "5", topic: "lv:phx-9bJzyKeHAkI"}
+State: %{components: {%{{MyTubeWeb.Live.Components.QuestionForm, :question_form} => {0, %{disable_question: true, id: :question_form, question_changeset: #Ecto.Changeset<action: nil, changes: %{}, errors: [content: {"can't be blank", [validation: :required]}], data: #MyTube.Core.Question<>, valid?: false>}, %{}, {339335001541921608376181035276752501140, %{}}}}, %{0 => {MyTubeWeb.Live.Components.QuestionForm, :question_form}}, 1}, join_ref: "4", serializer: Phoenix.Socket.V2.JSONSerializer, socket: #Phoenix.LiveView.Socket<assigns: %{disable_question: true, event: %MyTube.Core.Event{__meta__: #Ecto.Schema.Metadata<:loaded, "events">, creator: #Ecto.Association.NotLoaded<association :creator is not loaded>, description: "qq", ...}, event_id: "1", like_status: false, likes_count: 0, ...}, changed: %{}, endpoint: MyTubeWeb.Endpoint, id: "phx-9bJzyKeHAkI", parent_pid: nil, view: MyTubeWeb.Live.Event.Show, ...>, topic: "lv:phx-9bJzyKeHAkI", transport_pid: #PID<0.786.0>, uri: %URI{authority: nil, fragment: nil, host: "localhost", path: nil, port: 4000, query: nil, scheme: "http", userinfo: nil}}
+13:52:07.570 [error] #PID<0.1614.0> running MyTubeWeb.Endpoint (connection #PID<0.1612.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @question_changeset not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:event, :event_id, :like_status, :likes_count, :live_view_module, :question_data, :socket, :user_id, :views_count]
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/engine.ex:777: Phoenix.LiveView.Engine.fetch_assign!/2
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:21: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+13:52:07.647 [error] #PID<0.1631.0> running MyTubeWeb.Endpoint (connection #PID<0.1630.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @question_changeset not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:event, :event_id, :like_status, :likes_count, :live_view_module, :question_data, :socket, :user_id, :views_count]
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/engine.ex:777: Phoenix.LiveView.Engine.fetch_assign!/2
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:21: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+13:52:20.044 [error] #PID<0.1645.0> running MyTubeWeb.Endpoint (connection #PID<0.1643.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @question_changeset not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:event, :event_id, :like_status, :likes_count, :live_view_module, :question_data, :socket, :user_id, :views_count]
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/engine.ex:777: Phoenix.LiveView.Engine.fetch_assign!/2
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:21: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+13:52:20.078 [error] #PID<0.1648.0> running MyTubeWeb.Endpoint (connection #PID<0.1647.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @question_changeset not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:event, :event_id, :like_status, :likes_count, :live_view_module, :question_data, :socket, :user_id, :views_count]
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/engine.ex:777: Phoenix.LiveView.Engine.fetch_assign!/2
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:21: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+13:52:21.647 [error] #PID<0.1676.0> running MyTubeWeb.Endpoint (connection #PID<0.1643.0>, stream id 3) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @question_changeset not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:event, :event_id, :like_status, :likes_count, :live_view_module, :question_data, :socket, :user_id, :views_count]
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/engine.ex:777: Phoenix.LiveView.Engine.fetch_assign!/2
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:21: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+13:54:11.333 [error] #PID<0.1685.0> running MyTubeWeb.Endpoint (connection #PID<0.1684.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @question_changeset not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:event, :event_id, :like_status, :likes_count, :live_view_module, :question_data, :socket, :user_id, :views_count]
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/engine.ex:777: Phoenix.LiveView.Engine.fetch_assign!/2
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:21: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+13:54:11.826 [error] #PID<0.1708.0> running MyTubeWeb.Endpoint (connection #PID<0.1707.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @question_changeset not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:event, :event_id, :like_status, :likes_count, :live_view_module, :question_data, :socket, :user_id, :views_count]
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/engine.ex:777: Phoenix.LiveView.Engine.fetch_assign!/2
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:21: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+13:55:18.556 [error] #PID<0.1717.0> running MyTubeWeb.Endpoint (connection #PID<0.1715.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @question_changeset not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:event, :event_id, :like_status, :likes_count, :live_view_module, :question_data, :socket, :user_id, :views_count]
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/engine.ex:777: Phoenix.LiveView.Engine.fetch_assign!/2
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:21: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+13:55:18.876 [error] #PID<0.1737.0> running MyTubeWeb.Endpoint (connection #PID<0.1736.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @question_changeset not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:event, :event_id, :like_status, :likes_count, :live_view_module, :question_data, :socket, :user_id, :views_count]
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/engine.ex:777: Phoenix.LiveView.Engine.fetch_assign!/2
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:21: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+13:55:57.758 [error] #PID<0.1747.0> running MyTubeWeb.Endpoint (connection #PID<0.1746.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @question_changeset not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:event, :event_id, :like_status, :likes_count, :live_view_module, :question_data, :socket, :user_id, :views_count]
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/engine.ex:777: Phoenix.LiveView.Engine.fetch_assign!/2
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:21: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+13:55:57.880 [error] #PID<0.1766.0> running MyTubeWeb.Endpoint (connection #PID<0.1765.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @question_changeset not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:event, :event_id, :like_status, :likes_count, :live_view_module, :question_data, :socket, :user_id, :views_count]
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/engine.ex:777: Phoenix.LiveView.Engine.fetch_assign!/2
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:21: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+13:56:03.452 [error] #PID<0.1776.0> running MyTubeWeb.Endpoint (connection #PID<0.1774.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @question_changeset not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:event, :event_id, :like_status, :likes_count, :live_view_module, :question_data, :socket, :user_id, :views_count]
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/engine.ex:777: Phoenix.LiveView.Engine.fetch_assign!/2
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:21: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+13:56:20.080 [error] #PID<0.1791.0> running MyTubeWeb.Endpoint (connection #PID<0.1789.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @question_changeset not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:event, :event_id, :like_status, :likes_count, :live_view_module, :question_data, :socket, :user_id, :views_count]
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/engine.ex:777: Phoenix.LiveView.Engine.fetch_assign!/2
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:21: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+13:57:39.230 [error] #PID<0.1801.0> running MyTubeWeb.Endpoint (connection #PID<0.1799.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @question_changeset not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:event, :event_id, :like_status, :likes_count, :live_view_module, :question_data, :socket, :user_id, :views_count]
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/engine.ex:777: Phoenix.LiveView.Engine.fetch_assign!/2
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:21: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+13:57:39.899 [error] #PID<0.1821.0> running MyTubeWeb.Endpoint (connection #PID<0.1820.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @question_changeset not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:event, :event_id, :like_status, :likes_count, :live_view_module, :question_data, :socket, :user_id, :views_count]
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/engine.ex:777: Phoenix.LiveView.Engine.fetch_assign!/2
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:21: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+13:57:46.298 [error] #PID<0.1831.0> running MyTubeWeb.Endpoint (connection #PID<0.1829.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @question_changeset not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:event, :event_id, :like_status, :likes_count, :live_view_module, :question_data, :socket, :user_id, :views_count]
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/engine.ex:777: Phoenix.LiveView.Engine.fetch_assign!/2
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:21: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+13:58:04.452 [error] #PID<0.1846.0> running MyTubeWeb.Endpoint (connection #PID<0.1844.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @question_changeset not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:event, :event_id, :like_status, :likes_count, :live_view_module, :question_data, :socket, :user_id, :views_count]
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/engine.ex:777: Phoenix.LiveView.Engine.fetch_assign!/2
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:21: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+13:58:17.070 [error] #PID<0.1881.0> running MyTubeWeb.Endpoint (connection #PID<0.1870.0>, stream id 3) terminated
+Server: localhost:4000 (http)
+Request: GET /events/1
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @question_changeset not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:event, :event_id, :like_status, :likes_count, :live_view_module, :question_data, :socket, :user_id, :views_count]
+
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/engine.ex:777: Phoenix.LiveView.Engine.fetch_assign!/2
+        (my_tube 0.1.0) lib/my_tube_web/templates/page/live_show.html.leex:21: MyTubeWeb.PageView."live_show.html"/1
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/utils.ex:63: Phoenix.LiveView.Utils.to_rendered/2
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:247: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/static.ex:130: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.6.0) lib/phoenix_live_view/controller.ex:35: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.4.13) lib/phoenix/router.ex:288: Phoenix.Router.__call__/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.plug_builder_call/2
+        (my_tube 0.1.0) lib/plug/debugger.ex:130: MyTubeWeb.Endpoint."call (overridable 3)"/2
+        (my_tube 0.1.0) lib/my_tube_web/endpoint.ex:1: MyTubeWeb.Endpoint.call/2
+        (phoenix 1.4.13) lib/phoenix/endpoint/cowboy2_handler.ex:42: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_handler.erl:41: :cowboy_handler.execute/2
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:320: :cowboy_stream_h.execute/3
+        (cowboy 2.7.0) /Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/deps/cowboy/src/cowboy_stream_h.erl:302: :cowboy_stream_h.request_process/3
+        (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+12:31:00.138 [error] Failed to start Ranch listener MyTubeWeb.Endpoint.HTTP in :ranch_tcp:listen([cacerts: :..., key: :..., cert: :..., port: 4000]) for reason :eaddrinuse (address already in use)
+
+12:38:16.839 [error] Task MyTubeWeb.Endpoint started from #PID<0.572.0> terminating
+** (stop) :watcher_command_error
+    (phoenix 1.5.3) lib/phoenix/endpoint/watcher.ex:37: Phoenix.Endpoint.Watcher.watch/3
+    (elixir 1.10.2) lib/task/supervised.ex:90: Task.Supervised.invoke_mfa/2
+    (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+Function: &Phoenix.Endpoint.Watcher.watch/3
+    Args: ["node", ["node_modules/webpack/bin/webpack.js", "--mode", "development", "--watch-stdin"], [cd: "/Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/assets"]]
+12:38:19.519 [error] Task MyTubeWeb.Endpoint started from #PID<0.599.0> terminating
+** (stop) :watcher_command_error
+    (phoenix 1.5.3) lib/phoenix/endpoint/watcher.ex:37: Phoenix.Endpoint.Watcher.watch/3
+    (elixir 1.10.2) lib/task/supervised.ex:90: Task.Supervised.invoke_mfa/2
+    (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+Function: &Phoenix.Endpoint.Watcher.watch/3
+    Args: ["node", ["node_modules/webpack/bin/webpack.js", "--mode", "development", "--watch-stdin"], [cd: "/Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/assets"]]
+12:38:22.245 [error] Task MyTubeWeb.Endpoint started from #PID<0.601.0> terminating
+** (stop) :watcher_command_error
+    (phoenix 1.5.3) lib/phoenix/endpoint/watcher.ex:37: Phoenix.Endpoint.Watcher.watch/3
+    (elixir 1.10.2) lib/task/supervised.ex:90: Task.Supervised.invoke_mfa/2
+    (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+Function: &Phoenix.Endpoint.Watcher.watch/3
+    Args: ["node", ["node_modules/webpack/bin/webpack.js", "--mode", "development", "--watch-stdin"], [cd: "/Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/assets"]]
+12:38:24.964 [error] Task MyTubeWeb.Endpoint started from #PID<0.602.0> terminating
+** (stop) :watcher_command_error
+    (phoenix 1.5.3) lib/phoenix/endpoint/watcher.ex:37: Phoenix.Endpoint.Watcher.watch/3
+    (elixir 1.10.2) lib/task/supervised.ex:90: Task.Supervised.invoke_mfa/2
+    (stdlib 3.11.2) proc_lib.erl:249: :proc_lib.init_p_do_apply/3
+Function: &Phoenix.Endpoint.Watcher.watch/3
+    Args: ["node", ["node_modules/webpack/bin/webpack.js", "--mode", "development", "--watch-stdin"], [cd: "/Users/sqrt/DATA_2020/code/_ELIXIR/my_tube/assets"]]

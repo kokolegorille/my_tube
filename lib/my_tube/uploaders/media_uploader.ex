@@ -52,10 +52,10 @@ defmodule MyTube.Uploaders.MediaUploader do
 
   # Override the storage directory prefix:
   # IMPORTANT!
-  def storage_dir_prefix() do
-    # Path.join to_string(:code.priv_dir(:my_tube)), ["static/", "uploads"]
-    "/Users/sqrt/DATA_2020/uploads"
-  end
+  # def storage_dir_prefix() do
+  #   # Path.join to_string(:code.priv_dir(:my_tube)), ["static/", "uploads"]
+  #   "/Users/sqrt/DATA_2020/uploads"
+  # end
 
   # Provide a default URL if there hasn't been a file uploaded
   # def default_url(version, scope) do

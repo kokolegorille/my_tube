@@ -1,0 +1,12 @@
+<%= 
+  form_for @question_data.question_changeset, 
+  "#", 
+  [id: :question_form, phx_change: :change, phx_submit: :save, phx_target: "#question_form"], 
+  fn f -> %>
+  <%= input(f, :content, using: :textarea, html_opts: [rows: 5, required: true]) %>
+  <%= 
+    submit "Submit", 
+    phx_disable_with: "Saving...", 
+    class: "btn btn-primary", 
+    disabled: @question_data.disable_question %>
+<% end %>

@@ -18,6 +18,19 @@ import "phoenix_html"
 
 import "babel-polyfill";
 
+// Polyfill for IE11 and MS Edge 12-18
+import "mdn-polyfills/CustomEvent"
+import "mdn-polyfills/String.prototype.startsWith"
+import "mdn-polyfills/Array.from"
+import "mdn-polyfills/NodeList.prototype.forEach"
+import "mdn-polyfills/Element.prototype.closest"
+import "mdn-polyfills/Element.prototype.matches"
+import "child-replace-with-polyfill"
+import "url-search-params-polyfill"
+import "formdata-polyfill"
+import "classlist-polyfill"
+import "shim-keyboard-event-key"
+
 // ====================================
 // Bootstrap dynamic file input
 // ====================================
@@ -79,3 +92,5 @@ import LiveSocket from "phoenix_live_view"
 let csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content");
 let liveSocket = new LiveSocket("/live", Socket, {params: {_csrf_token: csrfToken}});
 liveSocket.connect()
+
+window.liveSocket = liveSocket
